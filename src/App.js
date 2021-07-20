@@ -1,25 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import navTab from "./Components/navTab.jsx";
+import React from 'react';
 
+
+
+/*
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <navTab />
     </div>
   );
+}*/
+
+
+class App extends React.Component {
+  constructor(){
+    super();
+
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e){
+    var id = e.target.id;
+    console.log("clicked");
+    console.log(id);
+  }
+
+  render(){
+    return (
+      <div className = "App">
+        <span>hello world</span>
+        <div>
+          <button id="1" onClick={this.handleClick}>Intro</button>
+          <button id={2} onClick={this.handleClick}>Experience</button>
+          <button id={3} onClick={this.handleClick}>Contact</button>
+        </div>
+      </div>
+    )
+  }
 }
 
 export default App;
