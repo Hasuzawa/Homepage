@@ -6,12 +6,15 @@ For a structural overview of the website, please visit [the Wiki of this project
 The brief outline of the website is given below.
 
 ## Introduction
+  Programmer with. Has a comprehensive understanding of several programming languages and stack.
 
 
 ## Work Experience
 <details>
   <summary open>professional</summary>
-  Currently working as a programmer and system engineer in Osaka, Japan. 
+  Currently working as a programmer and system engineer in Osaka, Japan. In actual work is more of a full-stack developer. Have work experience using HTML, CSS, JavaScript for
+  fontend, Java, SQL, database for the backend.
+  In spare time learned Python, C++, React, Sass, Git.
 
 
 </details>
@@ -21,6 +24,7 @@ The brief outline of the website is given below.
   <summary>more than a programmer</summary>
 
   ### Programming Languages
+  [//]: # (should use svg icon from local repository. You will use them in the website anyway)
   ![C](https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg)
   -  C
   -  C++
@@ -43,4 +47,4 @@ The brief outline of the website is given below.
 </details>
 
 ## Contact
-
+We are on GitHub! Feel free to drop me a message.
