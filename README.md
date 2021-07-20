@@ -1,13 +1,20 @@
 # Homepage of Hasuzawa
-This is the homepage of Hasuzawa. This is not open-source but you are welcome to make suggestions.
-The website is written with React, JSX, Sass.
+This is the [homepage of Hasuzawa](). This is <u>not</u> a collaborative project but I welcome ideas and suggestions.
+The website is written with React, JSX, Sass and the standard suite(HTML,CSS,JS).
 For a structural overview of the website, please visit [the Wiki of this project](https://github.com/Hasuzawa/homepage/wiki/Overview).
+Alternatively, utilise the [official google plugin](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 
 The brief outline of the website is given below.
 
-## Introduction
-  Programmer with. Has a comprehensive understanding of several programming languages and stack.
+#### Version
+This website is last updated on July 20 2021.
 
+## Introduction
+  Programmer with science background. Has a comprehensive understanding of several programming languages and stack. 
+
+I am also a polygot and can speak 6 langauges and dialects in real life.
+
+I am willing to move and prepare for the job beforehand if I receive a formal offer.
 
 ## Work Experience
 <details>
