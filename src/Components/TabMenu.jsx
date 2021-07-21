@@ -4,14 +4,12 @@ import {TabIndex} from "./enum.js";
 export class TabMenu extends React.Component{
     constructor(props){
         super(props);
-
         this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick(){
-        console.log("ok");
+    handleClick(e){
+        this.props.handleClick(e.target.id);
     }
-
 
     render(){
         return (
