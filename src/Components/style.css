@@ -1,0 +1,25 @@
+.tab-menu{
+    display: flex;
+    flex-basis: auto;
+}
+
+.tab-menu button{
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+}
+
+.tab-content{
+    animation: fade-in-effect 0.3s;
+}
+
+
+
+@keyframes fade-in-effect{
+    from {opacity: 0}
+    to {opacity: 1}
+}

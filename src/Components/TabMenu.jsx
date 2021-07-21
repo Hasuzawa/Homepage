@@ -1,5 +1,6 @@
 import React from "react";
 import {TabIndex} from "./enum.js";
+import "./style.css";
 
 export class TabMenu extends React.Component{
     constructor(props){
@@ -13,12 +14,12 @@ export class TabMenu extends React.Component{
 
     render(){
         return (
-        <nav className = "tabMenu">
-          <button id={TabIndex.introduction} onClick={this.handleClick}>Intro</button>
-          <button id={TabIndex.workExperience} onClick={this.handleClick}>Experience</button>
-          <button id={TabIndex.expertise} onClick={this.handleClick}>Expertise</button>
-          <button id={TabIndex.knowledge} onClick={this.handleClick}>Knowledge</button>
-          <button id={TabIndex.contact} onClick={this.handleClick}>Contact</button>
+        <nav className="tab-menu">
+          <button id={TabIndex.introduction} onClick={this.handleClick} className="tab">Intro</button>
+          <button id={TabIndex.workExperience} onClick={this.handleClick} className="tab">Experience</button>
+          <button id={TabIndex.expertise} onClick={this.handleClick} className="tab">Expertise</button>
+          <button id={TabIndex.knowledge} onClick={this.handleClick} className="tab">Knowledge</button>
+          <button id={TabIndex.contact} onClick={this.handleClick} className="tab">Contact</button>
         </nav>
         );
     }

@@ -7,7 +7,7 @@ Alternatively, utilise the [official google plugin](https://chrome.google.com/we
 The brief outline of the website is given below.
 
 #### Version
-This website is last updated on July 21 2021.
+This page is last updated on July 21 2021.
 
 ## Introduction
 I am a programmer with science background. I can programme in a variety of languages and stack.<br />
@@ -18,11 +18,10 @@ I am willing to move across city and country while prepare for the job beforehan
 ## Work Experience
 <details>
   <summary open>professional</summary>
-  Currently working as a programmer and system engineer in Osaka, Japan. In actual work is more of a full-stack developer. Have work experience using HTML, CSS, JavaScript for
-  fontend, Java, SQL, database for the backend.
-  In spare time learned Python, C++, React, Sass, Git, networking and some cyber security.
-
-
+  Currently I am working as a programmer and system engineer in Osaka, Japan.<br />
+  I worked on a part of intranet system that controls the connection of subnets.<br>
+  I implemented a frontend with HTML, CSS, Javascript in the frontend as a GUI for controlling connections.
+  In the backend, I programmed the logic using Java and SQL to fetch the relevant data for the frontend and to update the database.
 </details>
 
 ## Knowledge
@@ -46,10 +45,14 @@ I am willing to move across city and country while prepare for the job beforehan
   -  basic knowledge on cyber security and vulnerability including cross-site scrpting, password cracking techniques, authentication, public key crytography.
 
   ### Languages
-  -  English    I am bilingual in English and Chinese.
-  -  Japanese   I live and work in Japan right now and has passed the highest level of the most recognised Japanese exam JLPT.
-  -  German     I can understand daily life German and can read German news and publications.
-  -  Chinese    In addition to Mandarin, I can speak two more dialects.
+  -  English
+     I am bilingual in English and Chinese.
+  -  Japanese
+     I live and work in Japan right now and has passed the highest level of the most recognised Japanese exam JLPT.
+  -  German
+     I can understand daily life German and can read German news and publications.
+  -  Chinese
+     In addition to Mandarin, I can speak two more dialects.
 </details>
 
 ## Contact
