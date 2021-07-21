@@ -1,21 +1,24 @@
 import React from "react";
+import {Job} from "./blocks.jsx";
 
 export function Introduction (){
     return (
         <div className="tabContent">
             <h1>Work in progress</h1>
-            <h3>Welcome</h3>
+            <h3>Hasuzawa@Home</h3>
             <p>
                 Welcome to the homepage of Hasuzawa. This is primarily my portfolio.<br />
-                I prefer to keep my projects maintained at one place. For the latest progress and projects, please pay a visit to my <a href="https://github.com/Hasuzawa">GitHub</a>.
+                I prefer to keep my projects maintained at one place. For the latest progress and projects, please visit my <a href="https://github.com/Hasuzawa">GitHub</a>.
             </p>
             <h3>About me</h3>
             <p>
-                I am a programmer currently working in Osaka, Japan. I primarily work on web development and has comprehensive understanding of HTML, CSS, JavaScript and React.<br />
-
+                I am a programmer and system engineer currently working in Osaka, Japan.<br />
+                I can programme in C, C++, Java, JavaScript and Python. As a web developer, I can programme in HTML, CSS, JavaScript and React. I also use Sass, Git.<br />
                 
-                I am also a polygot and can speak a total of 6 languages and dialects, including English, German, Japanese and Chinese. I am immensely helpful in an
+                In addition to my programming abilities, I am also a polygot and can speak a total of 6 languages and dialects, including English, German, Japanese and Chinese. I am invaluable in an
                 increasingly interconnected world, in which diverse culture and nationality is the norm.
+                <br />
+                I am actively looking for job opportunities. I am willing to move across city and country while prepare for the job beforehand if I receive a formal offer.
             </p>
         </div>
     );
@@ -24,16 +27,14 @@ export function Introduction (){
 export function WorkExperience(){
     return (
         <div className="tabContent">
-            {/*refactor this later */}
-            <div>
-                <h3>Programmer</h3>
-                <span>15 March - current</span>
-                <span>NetValue Co., Ltd. (Japan)</span>
-                <p>
-                    Implemented frontend and backend.
-                </p>
-                {/* image */}
-            </div>
+            {/* you would likely further factorise this into json in the future*/}
+            <Job
+                jobTitle="Programmer -> System Engineer"
+                startDate="15 March 2021"
+                endDate="current"
+                company="NetValue Co., Ltd. (Japan)"
+                description="Implemented frontend and backend."
+            />
         </div>
     );
 }
@@ -43,6 +44,15 @@ export function Expertise(){
         <div className="tabContent">
             <h1>third page</h1>
             <p>3rd</p>
+            <div>
+                <h3>Website</h3>
+                {/* some tags, e.g. HTML, CSS, JavaScript */}
+
+                <p>
+                    This website is written by me. I used the React framework along with the the standard suite HTML, CSS, JavaScript.<br />
+                    The source code is hosted on <a href="https://github.com/Hasuzawa/homepage">GitHub</a>.
+                </p>
+            </div>
         </div>
     );
 }
@@ -52,10 +62,14 @@ export function Knowledge(){
         <div className="tabContent">
             <details>
                 <summary>Programming Languages</summary>
-    
+                
             </details>
             <details>
-                <summary>Software, Tools</summary>
+                <summary>Technology</summary>
+                <h3>Networking</h3>
+                <p></p>
+                <h3>Cyber Security</h3>
+                <p></p>
             </details>
             <details>
                 <summary>Languages</summary>
@@ -64,7 +78,7 @@ export function Knowledge(){
                         work in progress
                     </blockquote>
                     <p>
-                        I have lived in a city bilingual in English for over 20 years. In addition, I am quite educated in the Humanities for a programmer.
+                        I have lived in a city bilingual in English and Chinese for over 20 years. The vast majority of my education is completed using English.
                     </p>
                 <h3>Japanese</h3>
                     <blockquote>
