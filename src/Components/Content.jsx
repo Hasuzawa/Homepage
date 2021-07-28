@@ -1,6 +1,6 @@
 import React from "react";
 import {TabIndex} from "./enum.js";
-import {Introduction, WorkExperience, Expertise, Knowledge , Contact} from "./TabContent.jsx";
+import {Introduction, WorkExperience, Expertise, Knowledge , Contact} from "./contents.jsx";
 
 export default class Content extends React.Component {
     constructor(props){
