@@ -1,5 +1,6 @@
 import React from "react";
 
+//not used now
 export default class navTab extends React.Component {
     constructor(props){
         super(props);

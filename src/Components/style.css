@@ -64,8 +64,16 @@
 /* for non-white background, this produces a flashy effect that could be distracting */
 .content{
     flex-grow: 1;
+    text-align: center;
     background-color: lightblue;
     animation: fade-in-effect 0.3s;
+}
+
+.work-experience{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
 }
 
 @keyframes fade-in-effect{

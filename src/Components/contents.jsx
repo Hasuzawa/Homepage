@@ -13,13 +13,14 @@ export function Introduction (){
             </p>
             <h3>About me</h3>
             <p>
-                I am a programmer and system engineer currently working in Osaka, Japan.<br />
+                I am a programmer and system engineer currently working in Osaka, Japan. I have worked on a large-scale intranet system by implementing frontend using HTML, CSS, JavaScript for frontend to enter data and display result from database.<br />
+                In the backend, I used Java, SQL to connect to database to update or fetch data.
                 I can programme in C, C++, Java, JavaScript and Python. As a web developer, I can programme in HTML, CSS, JavaScript and React. I also use Sass, Git.<br />
                 
                 In addition to my programming abilities, I am also a polygot and can speak a total of 6 languages and dialects, including English, German, Japanese and Chinese. I am invaluable in an
                 increasingly interconnected world, in which diverse culture and nationality is the norm.
                 <br />
-                I am actively looking for job opportunities. I am willing to move across city and country while prepare for the job beforehand if I receive a formal offer.
+                I am actively looking for job opportunities. I am willing to relocate to another city or country while preparing for the job beforehand if I receive a formal offer.
             </p>
         </div>
     );
@@ -27,7 +28,7 @@ export function Introduction (){
 
 export function WorkExperience(){
     return (
-        <div className="content">
+        <div className="content work-experience">
             {/* you would likely further factorise this into json in the future*/}
             <Job
                 jobTitle="Programmer -> System Engineer"

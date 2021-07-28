@@ -1,0 +1,11 @@
+.job{
+    width: auto;
+    flex-basis: 50%;
+    max-width: 1500px;
+    min-width: 800px;
+    margin: 5px;
+    border: 1px black solid;
+    padding: 2px;
+}
+
+/*flex-basis is not working as intended */

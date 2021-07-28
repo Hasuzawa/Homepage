@@ -2,6 +2,8 @@ html{
   height: 100%;
 }
 
+/*there is now bugs, for very small windows, the header will go outside html and body into blank area */
+
 body{
   height: 100%;
   width: 100%;
