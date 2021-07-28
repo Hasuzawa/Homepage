@@ -1,7 +1,48 @@
 .tab-menu{
     display: flex;
-    flex-basis: auto;
+
 }
+
+.banner{
+
+}
+
+/* sticky header */
+.header{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    background-color: rgb(13, 2, 38);
+    /*box-shadow: 0px 5px 5px black;*/
+}
+
+.header span{
+    color: white;
+    
+}
+
+.header button{
+    margin: 0px;
+    border: 0px;
+    padding: 10px 12px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+.header button:hover{
+    background-color: rgb(255, 247, 25);
+    color: black;
+}
+
+.header button:active{
+    background-color: red;
+}
+
+/*not good design, the button is too large and is distractive for large screen */
+/* should have a thematic consistence in some colour */
 
 .tab-menu button{
     width: 100%;
@@ -13,13 +54,44 @@
     font-size: 30px;
 }
 
-.tab-content{
-    animation: fade-in-effect 0.3s;
+/*can be stacked with Sass */
+
+.tab-menu button:hover{
+    color: white;
+    background-color: black;
 }
 
+.tab-menu button:active{
+    color: red;
+    background-color: yellow;
+}
+/*
+p{
+    margin: 0px;
+    border: 0px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(24, 5, 65);
+}
+*/
 
+.content{
+    animation: fade-in-effect 0.3s;
+}
 
 @keyframes fade-in-effect{
     from {opacity: 0}
     to {opacity: 1}
+}
+
+/* forced to the bottom, even for very short page */
+.footer{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+.footer p{
+    color: white;
 }

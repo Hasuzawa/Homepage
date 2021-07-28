@@ -4,7 +4,7 @@ import "./style.css";
 
 export function Introduction (){
     return (
-        <div className="tab-content">
+        <div className="content">
             <h1>Work in progress</h1>
             <h3>Hasuzawa@Home</h3>
             <p>
@@ -27,7 +27,7 @@ export function Introduction (){
 
 export function WorkExperience(){
     return (
-        <div className="tab-content">
+        <div className="content">
             {/* you would likely further factorise this into json in the future*/}
             <Job
                 jobTitle="Programmer -> System Engineer"
@@ -42,7 +42,7 @@ export function WorkExperience(){
 
 export function Expertise(){
     return (
-        <div className="tab-content">
+        <div className="content">
             <h1>third page</h1>
             <p>3rd</p>
             <div>
@@ -60,7 +60,7 @@ export function Expertise(){
 //might want to change it to skill
 export function Knowledge(){
     return (
-        <div className="tab-content">
+        <div className="content">
             <details>
                 <summary>Programming Languages</summary>
                 
@@ -109,7 +109,7 @@ export function Knowledge(){
 
 export function Contact(){
     return (
-        <div className="tab-content">
+        <div className="content">
             <h1>5th page</h1>
             <p>
                 I can be reached at <a href="https://github.com/Hasuzawa">GitHub</a> or Linkdeln. This website is in fact hosted on GitHub and you can see the source code there.<br />

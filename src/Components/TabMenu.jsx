@@ -14,12 +14,14 @@ export class TabMenu extends React.Component{
 
     render(){
         return (
-        <nav className="tab-menu">
-          <button id={TabIndex.introduction} onClick={this.handleClick} className="tab">Intro</button>
-          <button id={TabIndex.workExperience} onClick={this.handleClick} className="tab">Experience</button>
-          <button id={TabIndex.expertise} onClick={this.handleClick} className="tab">Expertise</button>
-          <button id={TabIndex.knowledge} onClick={this.handleClick} className="tab">Knowledge</button>
-          <button id={TabIndex.contact} onClick={this.handleClick} className="tab">Contact</button>
+        <nav className="header">
+          <span>Hasuzawa@Home</span>
+          <button id={TabIndex.introduction} onClick={this.handleClick}>Intro</button>
+          <button id={TabIndex.workExperience} onClick={this.handleClick}>Experience</button>
+          <button id={TabIndex.expertise} onClick={this.handleClick}>Expertise</button>
+          <button id={TabIndex.knowledge} onClick={this.handleClick}>Knowledge</button>
+          <button id={TabIndex.contact} onClick={this.handleClick}>Contact</button>
+          {/* could place some font-change / light, dark mode switch button here etc */}
         </nav>
         );
     }

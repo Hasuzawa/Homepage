@@ -3,6 +3,8 @@ import React from 'react';
 import {TabIndex} from "./components/enum.js";
 import {TabMenu} from "./components/TabMenu.jsx";
 import TabBody from "./components/TabBody.jsx";
+import Footer from "./components/Footer.jsx";
+import Banner from "./components/Banner.jsx";
 
 
 export default class App extends React.Component {
@@ -23,8 +25,10 @@ export default class App extends React.Component {
   render(){
     return (
       <div className = "App">
+        <Banner />
         <TabMenu handleClick={this.handleClick}/>
         <TabBody selectedTab={this.state.selectedTab}/>
+        <Footer />
       </div>
     )
   }
