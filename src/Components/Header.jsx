@@ -2,7 +2,7 @@ import React from "react";
 import {TabIndex} from "./enum.js";
 import "./style.css";
 
-export class TabMenu extends React.Component{
+export default class Header extends React.Component{
     constructor(props){
         super(props);
         this.handleClick = this.handleClick.bind(this);

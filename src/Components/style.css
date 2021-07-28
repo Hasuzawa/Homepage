@@ -3,8 +3,20 @@
 
 }
 
-.banner{
 
+.App{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    flex-grow: 1;
+    background-color: lightblue;
+}
+
+.banner{
+    background-color: grey;
 }
 
 /* sticky header */
@@ -18,7 +30,7 @@
 
 .header span{
     color: white;
-    
+
 }
 
 .header button{

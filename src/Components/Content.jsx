@@ -2,7 +2,7 @@ import React from "react";
 import {TabIndex} from "./enum.js";
 import {Introduction, WorkExperience, Expertise, Knowledge , Contact} from "./TabContent.jsx";
 
-export default class TabBody extends React.Component {
+export default class Content extends React.Component {
     constructor(props){
         super(props);
         this.displayTabContent = this.displayTabContent.bind(this);
