@@ -6,6 +6,26 @@
     margin: 5px;
     border: 1px black solid;
     padding: 2px;
+
 }
 
+.job > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.job > div > h3{
+    margin: 4px;
+    border: 0px;
+    padding: 0px;
+}
+
+.job > div > span{
+    margin: 4px;
+    border: 0px;
+    padding: 0px;
+}
+
+
+/* display: grid could be a better choice
 /*flex-basis is not working as intended */
