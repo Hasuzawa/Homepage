@@ -26,7 +26,7 @@ export default class App extends React.Component {
     return (
       <div className = "App">
         <Banner />
-        <Header handleClick={this.handleClick}/>
+        <Header handleClick={this.handleClick} selectedTab={this.state.selectedTab}/>
         <Content selectedTab={this.state.selectedTab}/>
         <Footer />
       </div>
