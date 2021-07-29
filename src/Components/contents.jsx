@@ -35,8 +35,11 @@ export function WorkExperience(){
                 startDate="15 March 2021"
                 endDate="current"
                 company="NetValue Co., Ltd. (Japan)"
-                description="Implemented frontend and backend."
+                description="I worked as a programmer and later system engineer. I implemented both frontend and backend of a intranet sytem.
+                    In the forntend, I used HTML, JavaScript, CSS to display data and send information to the backend by API. In the backend,
+                    I used Java, SQL to handle downloading, returning enquired information or updating the database."
             />
+            
         </div>
     );
 }
@@ -116,6 +119,8 @@ export function Contact(){
                 I can be reached at <a href="https://github.com/Hasuzawa">GitHub</a> or Linkdeln. This website is in fact hosted on GitHub and you can see the source code there.<br />
                 Collaboration, enquiry, job offer are all welcomed.
             </p>
+            {/* format it better later */}
+            <iframe title="Working at the city center as a system engineer" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4639.379805585421!2d135.53002579240538!3d34.69163516608814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sjp!4v1627540397403!5m2!1sen!2sjp" width="600" height="450" allowFullScreen="" loading="lazy"></iframe>
         </div>
     );
 }
