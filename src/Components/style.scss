@@ -1,3 +1,10 @@
+/*  variables */
+
+
+
+
+/*****************************/
+
 .App{
     min-height: 100vh;
     display: flex;
@@ -22,40 +29,46 @@
     overflow: auto;
 }
 
-.header > span{
-    margin: 0px;
-    border: 0px;
-    padding: 10px 12px;
-    font-size: 20px;
-    color: black;
+
+%header-border-bottom{
     border-bottom: 5px solid black;
 }
 
-.header > button{
+.header > span{
+    @extend %header-border-bottom;
+
     margin: 0px;
-    border: 1px transparent;
-    border-bottom: 5px solid black;
+    padding: 10px 12px;
+    font-size: 20px;
+    color: black;
+}
+
+.header > button{
+    @extend %header-border-bottom;
+
+    margin: 0px;
     padding: 10px 12px;
     display: inline-block;
     cursor: pointer;
     background-color: transparent;
     color: black;
     font-size: 20px;
-}
+    
+    
+    &.selected{
+        background-color: white;
+        border: 5px solid black;
+        border-bottom: 5px transparent;
+    }
 
-.header > button.selected{
-    background-color: white;
-    border: 5px solid black;
-    border-bottom: 5px transparent;
-}
+    &:hover{
+        background-color: rgb(255, 247, 25);
+        color: black;
+    }
 
-.header > button:hover{
-    background-color: rgb(255, 247, 25);
-    color: black;
-}
-
-.header > button:active{
-    background-color: red;
+    &:active{
+        background-color: red;
+    }
 }
 
 /* should have a thematic consistence in some colour */
@@ -107,6 +120,9 @@
     border: 0px;
     padding: 0px;
     background-color: black;
+
+    display: flex;
+    justify-content: center;
 }
 
 .footer p{

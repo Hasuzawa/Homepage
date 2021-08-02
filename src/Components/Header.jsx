@@ -1,6 +1,6 @@
 import React from "react";
 import {TabIndex} from "./enum.js";
-import "./style.css";
+import "./style.scss";
 
 export default class Header extends React.Component{
     constructor(props){

@@ -1,6 +1,6 @@
 import React from "react";
 import {Job} from "./blocks.jsx";
-import "./style.css";
+import "./style.scss";
 
 export function Introduction (){
     return (

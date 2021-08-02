@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./style.scss";
 
 export default function Banner(){
     //keep the banner narrow and concise, so that one glance and people can understand it
