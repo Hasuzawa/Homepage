@@ -19,8 +19,8 @@ export default class App extends React.Component {
     this.handleFold = this.handleFold.bind(this);
   }
 
-  handleClick(id){
-    var tabClicked = parseInt(id); //id is a string when passed by event
+  handleClick(e){
+    var tabClicked = parseInt(e.target.id); //id is a string when passed by event
     console.log("clicked");
     console.log(tabClicked);
     this.setState({selectedTab: tabClicked});
@@ -37,7 +37,7 @@ export default class App extends React.Component {
     return (
       <div className = "App">
         <Banner bannerFolded={this.state.bannerFolded}/>
-        <Header handleClick={this.handleClick} selectedTab={this.state.selectedTab} handleFold={this.handleFold}/>
+        <Header handleClick={this.handleClick} selectedTab={this.state.selectedTab} handleFold={this.handleFold} bannerFolded={this.state.bannerFolded}/>
         <Content selectedTab={this.state.selectedTab}/>
         <Footer />
       </div>

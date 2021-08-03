@@ -30,7 +30,7 @@ export function Introduction (){
 export function WorkExperience(){
     return (
         <div className="content work-experience">
-            {/* you would likely further factorise this into json in the future*/}
+            {/* you would likely further refactor this into json in the future*/}
             <Job
                 jobTitle="Programmer -> System Engineer"
                 startDate="15 March 2021"

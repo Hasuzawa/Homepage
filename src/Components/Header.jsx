@@ -6,27 +6,18 @@ export default class Header extends React.Component{
     constructor(props){
         super(props);
 
-        this.handleClick = this.handleClick.bind(this);
         this.renderButtons = this.renderButtons.bind(this);
 
-        //this.handleFold = this.handleFold.bind(this);
     }
 
-    handleClick(e){
-        this.props.handleClick(e.target.id);
-    }
-
-    /*handleFold(e){
-        ;
-    }*/
-
+    
     renderButtons(){
         return (
             Object.keys(buttons).map((button, i) =>
                 <button
                     key={buttons[button].id}
                     id={buttons[button].id}
-                    onClick={this.handleClick}
+                    onClick={this.props.handleClick}
                     className={this.props.selectedTab === buttons[button].id ? "selected" : null}
                 >
                     {buttons[button].buttonName}
@@ -44,7 +35,7 @@ export default class Header extends React.Component{
             <div className="filler"></div>
             {this.renderButtons()}
             <div className="filler"></div>
-            <button className="fold-button" onClick={this.props.handleFold}>▲</button>
+            <button className="fold-button" onClick={this.props.handleFold}>{this.props.bannerFolded ? "▼" : "▲"}</button>
 
             {/* special bar for small screen, e.g. phone */}
             {/* could place some font-change / light, dark mode switch button here etc */}
