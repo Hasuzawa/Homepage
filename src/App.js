@@ -10,9 +10,13 @@ import Footer from "./components/Footer.jsx";
 export default class App extends React.Component {
   constructor(props){
     super(props);
-    this.state = {selectedTab: TabIndex.introduction};
+    this.state = {
+      selectedTab: TabIndex.introduction,
+      bannerFolded: false
+    };
 
     this.handleClick = this.handleClick.bind(this);
+    this.handleFold = this.handleFold.bind(this);
   }
 
   handleClick(id){
@@ -22,11 +26,18 @@ export default class App extends React.Component {
     this.setState({selectedTab: tabClicked});
   }
 
+  handleFold(e){
+    console.log("before change", this.state.bannerFolded);
+    var newFoldStatus = this.state.bannerFolded ? false : true;
+    this.setState({bannerFolded: newFoldStatus});
+    console.log("after change", newFoldStatus);
+  }
+
   render(){
     return (
       <div className = "App">
-        <Banner />
-        <Header handleClick={this.handleClick} selectedTab={this.state.selectedTab}/>
+        <Banner bannerFolded={this.state.bannerFolded}/>
+        <Header handleClick={this.handleClick} selectedTab={this.state.selectedTab} handleFold={this.handleFold}/>
         <Content selectedTab={this.state.selectedTab}/>
         <Footer />
       </div>

@@ -10,12 +10,45 @@ $header-border: 3px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
+    position: relative;
 }
 
 /*****************************/
 
 .banner{
     background-color: grey;
+
+    //transition: 1s ease-in-out;
+
+    position: relative;
+    overflow: hidden;
+    //transition: height 1s ease-in-out 0s;
+
+    
+
+
+    &.folded{
+        //max-height: 0px;
+        max-height: 0px;
+        transition: max-height 1s ease-in-out;
+        //transition: height 1s ease-in-out 0s;
+
+        //transform: translateY(-100%);
+        //animation: fold-vertical-effect 1s ease-in-out;
+    }
+
+    &.expanded{
+        //transform: translateY(0%);
+        max-height: 500px;
+        transition: max-height 5s ease-in-out;
+        //animation: fold-vertical-effect 1s ease-in-out reverse;
+    }
+}
+
+@keyframes fold-vertical-effect{
+    from {height: auto}
+    to {height: 0px}
 }
 
 /**********************/

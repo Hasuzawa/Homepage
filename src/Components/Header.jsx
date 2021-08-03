@@ -8,11 +8,17 @@ export default class Header extends React.Component{
 
         this.handleClick = this.handleClick.bind(this);
         this.renderButtons = this.renderButtons.bind(this);
+
+        //this.handleFold = this.handleFold.bind(this);
     }
 
     handleClick(e){
         this.props.handleClick(e.target.id);
     }
+
+    /*handleFold(e){
+        ;
+    }*/
 
     renderButtons(){
         return (
@@ -38,6 +44,7 @@ export default class Header extends React.Component{
             <div className="filler"></div>
             {this.renderButtons()}
             <div className="filler"></div>
+            <button className="fold-button" onClick={this.props.handleFold}>▲</button>
 
             {/* special bar for small screen, e.g. phone */}
             {/* could place some font-change / light, dark mode switch button here etc */}
