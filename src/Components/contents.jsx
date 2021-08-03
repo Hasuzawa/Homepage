@@ -2,10 +2,10 @@ import React from "react";
 import {Job} from "./blocks.jsx";
 import "./style.scss";
 
+
 export function Introduction (){
     return (
-        <div className="content">
-            <h1>Work in progress</h1>
+        <div className="content introduction">
             <h3>Hasuzawa@Home</h3>
             <p>
                 Welcome to the homepage of Hasuzawa. This is primarily my portfolio.<br />
@@ -26,6 +26,7 @@ export function Introduction (){
     );
 }
 
+
 export function WorkExperience(){
     return (
         <div className="content work-experience">
@@ -44,39 +45,47 @@ export function WorkExperience(){
     );
 }
 
-export function Expertise(){
+
+export function Projects(){
     return (
-        <div className="content">
-            <h1>third page</h1>
-            <p>3rd</p>
-            <div>
-                <h3>Website</h3>
-                {/* some tags, e.g. HTML, CSS, JavaScript */}
+        <div className="content projects">
+
+            <div className="project">
+                <h3><u>Project 1: Website</u></h3>
+                <div>
+                    {/* some tags, e.g. HTML, CSS, JavaScript */}
+                </div>
+                
 
                 <p>
                     This website is written by me. I used the React framework along with the the standard suite HTML, CSS, JavaScript.<br />
-                    The source code is hosted on <a href="https://github.com/Hasuzawa/homepage">GitHub</a>.
+                    I want to keep it simple and it has no dependency on online content nor library, meaning that you can download it and host a local server to preview it even when offline.
+                    I also used Scss to refactor the CSS.<br />
+                    The source code is available at <a href="https://github.com/Hasuzawa/homepage">GitHub</a>.
                 </p>
             </div>
         </div>
     );
 }
-//might want to change it to skill
-export function Knowledge(){
+
+
+export function Skill(){
     return (
-        <div className="content">
-            <details>
+        <div className="content skills">
+            <details open className="skill">
                 <summary>Programming Languages</summary>
                 
             </details>
-            <details>
+            <details open className="skill">
                 <summary>Technology</summary>
                 <h3>Networking</h3>
-                <p></p>
+                <p>I am a qualified .
+                    I have knowledge on HTTP, IP addresses, subnet, OSI model, server.
+                </p>
                 <h3>Cyber Security</h3>
                 <p></p>
             </details>
-            <details>
+            <details open className="skill">
                 <summary>Languages</summary>
                 <h3>English</h3>
                     <blockquote>

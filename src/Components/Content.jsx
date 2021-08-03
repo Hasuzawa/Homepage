@@ -1,6 +1,6 @@
 import React from "react";
 import {TabIndex} from "./enum.js";
-import {Introduction, WorkExperience, Expertise, Knowledge , Contact} from "./contents.jsx";
+import {Introduction, WorkExperience, Projects, Skill , Contact} from "./contents.jsx";
 
 export default class Content extends React.Component {
     constructor(props){
@@ -13,8 +13,8 @@ export default class Content extends React.Component {
         switch(this.props.selectedTab){
             case TabIndex.introduction: return <Introduction />;
             case TabIndex.workExperience: return <WorkExperience />;
-            case TabIndex.expertise: return <Expertise />;
-            case TabIndex.knowledge: return <Knowledge />;
+            case TabIndex.expertise: return <Projects />;
+            case TabIndex.knowledge: return <Skill />;
             case TabIndex.contact: return <Contact />;
             default: console.log("wrong"); return null;
           }

@@ -38,6 +38,8 @@ export default class Header extends React.Component{
             <div className="filler"></div>
             {this.renderButtons()}
             <div className="filler"></div>
+
+            {/* special bar for small screen, e.g. phone */}
             {/* could place some font-change / light, dark mode switch button here etc */}
         </nav>
         );

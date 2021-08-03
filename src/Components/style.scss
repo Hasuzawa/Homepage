@@ -96,6 +96,8 @@ $header-border: 3px;
 
 /* for non-white background, this produces a flashy effect that could be distracting */
 .content{
+    @extend %flex-column-center;
+
     flex-grow: 1;
     text-align: center;
     background-color: white;
@@ -103,12 +105,44 @@ $header-border: 3px;
     overflow: auto;
 }
 
-.work-experience{
+.introduction *{
+    max-width: 1200px;
+}
+
+%flex-column-center{
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
     align-items: center;
 }
+
+.work-experience{
+    
+}
+
+
+.projects{
+
+}
+
+.project{
+    margin: 10px;
+    border: 1px solid black;
+}
+
+
+
+
+.skills{
+    @extend %flex-column-center;
+}
+
+.skill{
+    margin: 20px;
+    border: 1px solid black;
+    max-width: 1200px;
+    padding: 6px;
+}
+
 
 @keyframes fade-in-effect{
     from {opacity: 0}
