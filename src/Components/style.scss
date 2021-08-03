@@ -1,5 +1,6 @@
 /*  variables */
 
+$header-border: 3px;
 
 
 
@@ -31,7 +32,7 @@
 
 
 %header-border-bottom{
-    border-bottom: 5px solid black;
+    border-bottom: $header-border solid black;
 }
 
 .header > span{
@@ -44,7 +45,8 @@
 }
 
 .header > button{
-    @extend %header-border-bottom;
+    border: $header-border transparent;
+    border-bottom: $header-border solid black;
 
     margin: 0px;
     padding: 10px 12px;
@@ -57,25 +59,26 @@
     
     &.selected{
         background-color: white;
-        border: 5px solid black;
-        border-bottom: 5px transparent;
+        border: $header-border solid black;
+        border-bottom: $header-border transparent;
     }
 
     &:hover{
-        background-color: rgb(255, 247, 25);
-        color: black;
+        background-color: rgba(0, 0, 0, 0.2);
     }
 
     &:active{
-        background-color: red;
+        /* change this */
+        background-color: rgba(236, 61, 61, 0.2);
     }
 }
 
 /* should have a thematic consistence in some colour */
 
 .header > div.filler{
+    @extend %header-border-bottom;
+
     flex-grow: 1;
-    border-bottom: 5px solid black;
 }
 
 /*not used now */
