@@ -1,4 +1,3 @@
-//not used now
 
 export const TabIndex = Object.freeze({
     introduction: 0,

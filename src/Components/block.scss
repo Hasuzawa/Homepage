@@ -28,3 +28,15 @@
 
 /* display: grid could be a better choice
 /*flex-basis is not working as intended */
+
+
+/*******************/
+
+.gallery button{
+    color: black;
+
+
+    &:hover{
+        color: red;
+    }
+}

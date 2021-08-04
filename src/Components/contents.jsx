@@ -2,6 +2,9 @@ import React from "react";
 import {Job} from "./blocks.jsx";
 import "./style.scss";
 
+import {Gallery} from "./blocks.jsx"
+import { language_English_photos } from "./photos.js";
+
 
 export function Introduction (){
     return (
@@ -22,6 +25,9 @@ export function Introduction (){
                 <br />
                 I am actively looking for job opportunities. I am willing to relocate to another city or country while preparing for the job beforehand if I receive a formal offer.
             </p>
+            <Gallery
+                photos={language_English_photos}
+            />
         </div>
     );
 }
