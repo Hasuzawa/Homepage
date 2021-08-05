@@ -1,19 +1,26 @@
 export const language_English_photos = Object.freeze({
-    photo_0: {
+    0: {
         id: 0, 
         url: "",
+        alt: "certificate for passing TOEIC",
         caption: "TOEIC score"
     },
-    photo_1: {
+    1: {
         id: 1,
         url: "",
-        caption: "The most challenging English in Japan"
+        alt: "certificate for passing one of the most challenging English exam in Japan",
+        caption: "One of the most challenging English exam in Japan"
     },
-    photo_2: {
+    2: {
         id: 2,
         url: "",
-        caption: ""
+        alt: "",
+        caption: "IELTS score"
     }
 
+
+});
+
+export const language_Japanese_photos = Object.freeze({
 
 });

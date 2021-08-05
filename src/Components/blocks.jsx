@@ -28,8 +28,11 @@ export class Gallery extends React.Component{
         //testing
         console.log("testing");
         console.log(props);
-        console.log(props.photos.photo_0.caption);
-        console.log(props.photos["photo_0"].caption);
+        //console.log(props.photos.photo_0.caption);
+        //console.log(props.photos["photo_0"].caption);
+
+        console.log(props.photos[0].caption);
+        console.log(props.photos[1].caption);
 
 
 
@@ -39,10 +42,14 @@ export class Gallery extends React.Component{
         console.log(numberOfPhoto);
 
         if (numberOfPhoto <= 0){
-            throw TypeError("cannot create gallery with improper amount of photo: {0}".format(numberOfPhoto));
+            let errorMessage = `cannot create gallery with improper amount of photo: ${numberOfPhoto}`;
+            throw TypeError(errorMessage);
         }
 
-        this.state = {selectedIndex: 0};
+        this.state = {
+            numberOfPhoto: numberOfPhoto,
+            selectedIndex: 0
+        };
 
         this.handleClick = this.handleClick.bind(this);
         this.renderImage = this.renderImage.bind(this);
@@ -53,29 +60,43 @@ export class Gallery extends React.Component{
 
     handleClick(e){
         var change = 0;
+
         switch(e.target.id){
-            case "+": change = 1;
-            case "-": change = -1;
+            case "+": change = 1; break;
+            case "-": change = -1; break;
             default: break;
         }
-        console.log(change);
 
-        var newIndex = this.state.selectedIndex + change;
-        
-        console.log(newIndex);
+        const numberOfPhoto = this.state.numberOfPhoto;
+        var newIndex = (this.state.selectedIndex + change + numberOfPhoto) % numberOfPhoto;
 
-    
+        console.log("change is", change);
+        console.log("N is", numberOfPhoto);
+        console.log("newIndex is", newIndex);
+
+        this.setState({selectedIndex: newIndex});
     }
 
 
     renderImage(){
+        var selectedPhoto = this.props.photos[this.state.selectedIndex];
+        console.log("selectedPhoto is ", selectedPhoto);
+        //use filter, we will always only render one image
         //list jsx render
         return(
             <>
-                <img />
+                <img
+                    src={selectedPhoto.src}
+                    alt={selectedPhoto.alt}
+                />
+                <button id="+" onClick={this.handleClick}>◀</button>
+                <span>{selectedPhoto.caption}</span>
+                <button id="-" onClick={this.handleClick}>▶</button>
             </>
         );
     }
+
+
 
 
     render(){
@@ -83,11 +104,7 @@ export class Gallery extends React.Component{
             <div className="gallery">
                 {this.renderImage()}
 
-                {/* a pair of > and < for the buttons */}
-                <button id="+"></button>
-                <button id="-"></button>
-                <span></span>
-                {/* image */}
+
                 {/* 2 arrow that pop up when hovered over photo */}
             </div>
         );
