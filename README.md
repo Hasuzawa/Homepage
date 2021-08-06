@@ -6,9 +6,6 @@ Alternatively, utilise the [official google plugin](https://chrome.google.com/we
 
 The brief outline of the website is given below.
 
-#### Version
-This page is last updated on July 21 2021.
-
 ## Introduction
 I am a programmer with science background. I can programme in a variety of languages and stack.<br />
 
@@ -26,19 +23,22 @@ I am willing to move across city and country while prepare for the job beforehan
 
 ## Knowledge
 <details open>
-  <summary>more than a programmer</summary>
+  <summary>programmer and system engineer</summary>
 
   ### Programming Languages
-  [//]: # (should use svg icon from local repository. You will use them in the website anyway)
-  ![C](https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg)
-  -  C
-  -  C++
-  -  Java
-  -  JavaScript
-  -  Python
-  ![HTML](https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg)
-  ![CSS](https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg)
-  ![JavaScript](https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg)
+  <p width="20px" height="20px"></p>
+  <img src="./public/logos/C_logo.svg" alt="C" width="70">
+  <img src="./public/logos/C++_logo.svg" alt="C++" width="70">
+  <img src="./public/logos/Java_logo.svg" alt="Java" width="70">
+  <img src="./public/logos/Python_logo.svg" alt="Python" width="70">
+
+  ### Web Development
+  <img src="./public/logos/HTML5_logo.svg" alt="HTML" height="70">
+  <span style="margin: 10px"><img src="./public/logos/CSS3_logo.svg" alt="CSS" height="70"></span>
+  <img src="./public/logos/Javascript_logo.svg" alt="Javascript" height="70">
+  <img src="./public/logos/React_logo.svg" alt="React" height="70">
+  <img src="./public/logos/Sass_logo.svg" alt="Sass" height="70">
+
 
   ### Technology
   -  knowledge on networking, server, OSI model, IP address, MAC address.
