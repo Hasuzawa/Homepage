@@ -32,31 +32,88 @@
 
 /*******************/
 .gallery{
-    &> img{
-        max-width: 100px;
-        max-height: 100px;
+    flex-direction: column;
+    border: 2px solid black;
+    
+
+    div:nth-child(1){
+
+    }
+
+
+    & img{
         object-fit: scale-down;
 
-        transition: 0.5s;
+        transition: 0.5s ease-in-out;
 
         &:hover{
+            /* might want to scale up and display at the left\right to not block the buttons */
             transform: scale(2.0);
             transform-origin: center bottom;
             
         }
     }
 
-    &> button{
-        color: black;
+    div:nth-child(2){
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
 
+        &> button{
+            color: black;
 
-        &:hover{
-            color: red;
+            background-color: grey;
+
+    
+    
+            &:hover{
+                color: red;
+            }
+    
+        }
+    
+        &> p{
+            background-color: yellow;
+
+            color: green;
+            max-width: 999px;
+            margin: 2px;
+            display: inline-block;
+            min-width: 0px;
+
         }
 
     }
 
-    &> span{
-        color: red;
+}
+
+/*************************/
+
+.language{
+
+
+    h3{
+
+    }
+
+    &> div{
+        display: flex;
+        flex-direction: row;
+
+        p{  
+            padding: 4px;
+            max-height: 200px;
+            min-width: 0px;
+            flex-shrink: 1;
+            width: 70%;
+            
+        }
+
+        &> .gallery{
+            border: 10px solid red;
+            width: 30%;
+            flex-shrink: 0;
+
+        }
     }
 }

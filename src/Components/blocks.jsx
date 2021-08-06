@@ -81,17 +81,22 @@ export class Gallery extends React.Component{
     renderImage(){
         var selectedPhoto = this.props.photos[this.state.selectedIndex];
         console.log("selectedPhoto is ", selectedPhoto);
-        //use filter, we will always only render one image
-        //list jsx render
+
         return(
-            <>
-                <img
-                    src={selectedPhoto.src}
-                    alt={selectedPhoto.alt}
-                />
-                <button id="+" onClick={this.handleClick}>◀</button>
-                <span>{selectedPhoto.caption}</span>
-                <button id="-" onClick={this.handleClick}>▶</button>
+            <>  
+                <div>
+                    <img
+                        src={selectedPhoto.src}
+                        alt={selectedPhoto.alt}
+                        width={this.props.image_width}
+                        height={this.props.image_height}
+                    />
+                </div>
+                <div>
+                    <button id="+" onClick={this.handleClick}>◀</button>
+                    <p>{selectedPhoto.caption}</p>
+                    <button id="-" onClick={this.handleClick}>▶</button>
+                </div>
             </>
         );
     }
@@ -103,10 +108,25 @@ export class Gallery extends React.Component{
         return(
             <div className="gallery">
                 {this.renderImage()}
-
-
-                {/* 2 arrow that pop up when hovered over photo */}
             </div>
         );
     }
+}
+
+
+
+export function Language(props){
+    return (
+        <div className="language">
+            <h3>{props.heading}</h3>
+            <div>
+                <p>{props.description}</p>
+                <Gallery
+                    photos={props.photos}
+                    image_width={props.image_width}
+                    image_height={props.image_width}
+                />
+            </div>
+        </div>
+    );
 }

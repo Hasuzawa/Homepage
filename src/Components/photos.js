@@ -17,10 +17,20 @@ export const language_English_photos = Object.freeze({
         alt: "",
         caption: "IELTS score"
     }
-
-
 });
 
 export const language_Japanese_photos = Object.freeze({
-
+    0: {
+        id: 0,
+        src: "",
+        alt: "",
+        caption: ""
+    },
+    1: {
+        id: 1,
+        src: "",
+        alt: "",
+        caption: ""
+    }
 });
+

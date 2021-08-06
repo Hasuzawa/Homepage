@@ -2,7 +2,7 @@ import React from "react";
 import {Job} from "./blocks.jsx";
 import "./style.scss";
 
-import {Gallery} from "./blocks.jsx"
+import {Gallery, Language} from "./blocks.jsx"
 import { language_English_photos } from "./photos.js";
 
 //import logo from "/logos/C++_logo.svg";
@@ -30,9 +30,6 @@ export function Introduction (){
             <Gallery
                 photos={language_English_photos}
             />
-            <img src="/logos/C++_logo.svg" alt="testing" ></img>
-{/*             <img src={logos/C_logo.svg} alt="testing" ></img> */}
-            {/* <img src={require("./src/components/testing.png")} alt="second test"/> */}
         </div>
     );
 }
@@ -83,10 +80,29 @@ export function Projects(){
 export function Skill(){
     return (
         <div className="content skills">
+
             <details open className="skill">
                 <summary>Programming Languages</summary>
-                
+                <div>
+                    <img src="/logos/C_logo.svg" alt="C" height="70px" />
+                    <img src="/logos/C++_logo.svg" alt="C++" height="70px" />
+                    <img src="/logos/Java_logo.svg" alt="Java" height="70px" />
+                    <img src="/logos/Javascript_logo.svg" alt="JavaScript" height="70px" />
+                    <img src="/logos/Python_logo.svg" alt="Python" height="70px" />
+                </div>
             </details>
+
+            <details open className="skill">
+                <summary>Web Development</summary>
+                <div>
+                    <img src="/logos/HTML5_logo.svg" alt="HTML" height="70px" />
+                    <img src="/logos/CSS3_logo.svg" alt="CSS" height="70px" />
+                    <img src="/logos/React_logo.svg" alt="React" height="70px" />
+                    <img src="/logos/Sass_logo.svg" alt="Sass" height="70px" />
+                    <img src="/logos/Django_logo.svg" alt="Django" height="70px" />
+                </div>
+            </details>
+
             <details open className="skill">
                 <summary>Technology</summary>
                 <h3>Networking</h3>
@@ -96,15 +112,26 @@ export function Skill(){
                 <h3>Cyber Security</h3>
                 <p></p>
             </details>
+
             <details open className="skill">
                 <summary>Languages</summary>
-                <h3>English</h3>
-                    <blockquote>
-                        work in progress
-                    </blockquote>
-                    <p>
-                        I have lived in a city bilingual in English and Chinese for over 20 years. The vast majority of my education is completed using English.
-                    </p>
+
+                <Language
+                    heading="English"
+                    description="I have lived in a city bilingual in English and Chinese for over 20 years. The vast majority of my education is completed using English."
+                    photos={language_English_photos}
+                    image_width="400px"
+                    image_height="700px"
+                />
+
+{/*                 <h3>English</h3>
+                    <div>
+                        <p>
+                            I have lived in a city bilingual in English and Chinese for over 20 years. The vast majority of my education is completed using English.
+                        </p>
+                        <Gallery photos={language_English_photos}/>
+                    </div> */}
+
                 <h3>Japanese</h3>
                     <blockquote>
 
@@ -140,7 +167,6 @@ export function Contact(){
                 Collaboration, enquiry, job offer are all welcomed.
             </p>
             {/* format it better later */}
-            <iframe title="Working at the city center as a system engineer" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4639.379805585421!2d135.53002579240538!3d34.69163516608814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sjp!4v1627540397403!5m2!1sen!2sjp" width="600" height="450" allowFullScreen="" loading="lazy"></iframe>
         </div>
     );
 }
