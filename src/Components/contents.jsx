@@ -5,6 +5,8 @@ import "./style.scss";
 import {Gallery} from "./blocks.jsx"
 import { language_English_photos } from "./photos.js";
 
+//import logo from "/logos/C++_logo.svg";
+
 
 export function Introduction (){
     return (
@@ -28,6 +30,9 @@ export function Introduction (){
             <Gallery
                 photos={language_English_photos}
             />
+            <img src="/logos/C++_logo.svg" alt="testing" ></img>
+{/*             <img src={logos/C_logo.svg} alt="testing" ></img> */}
+            {/* <img src={require("./src/components/testing.png")} alt="second test"/> */}
         </div>
     );
 }

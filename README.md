@@ -14,7 +14,7 @@ I am willing to move across city and country while prepare for the job beforehan
 
 ## Work Experience
 <details>
-  <summary open>professional</summary>
+  <summary open>full-stack developer and system engineer</summary>
   Currently I am working as a programmer and system engineer in Osaka, Japan.<br />
   I worked on a part of intranet system that controls the connection of subnets.<br>
   I implemented a frontend with HTML, CSS, Javascript in the frontend as a GUI for controlling connections.
@@ -23,7 +23,7 @@ I am willing to move across city and country while prepare for the job beforehan
 
 ## Knowledge
 <details open>
-  <summary>programmer and system engineer</summary>
+  <summary>languages, techs and tools</summary>
 
   ### Programming Languages
   <p width="20px" height="20px"></p>
@@ -33,6 +33,7 @@ I am willing to move across city and country while prepare for the job beforehan
   <img src="./public/logos/Python_logo.svg" alt="Python" width="70">
 
   ### Web Development
+  <!-- span will be sanitised on GitHub! Although in VS code it shows --->
   <img src="./public/logos/HTML5_logo.svg" alt="HTML" height="70">
   <span style="margin: 10px"><img src="./public/logos/CSS3_logo.svg" alt="CSS" height="70"></span>
   <img src="./public/logos/Javascript_logo.svg" alt="Javascript" height="70">
@@ -40,9 +41,15 @@ I am willing to move across city and country while prepare for the job beforehan
   <img src="./public/logos/Sass_logo.svg" alt="Sass" height="70">
 
 
+
+
   ### Technology
   -  knowledge on networking, server, OSI model, IP address, MAC address.
   -  basic knowledge on cyber security and vulnerability including cross-site scrpting, password cracking techniques, authentication, public key crytography.
+
+  ### Graphics
+   - Gimp
+   - Inkscape
 
   ### Languages
   -  English

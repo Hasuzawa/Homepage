@@ -31,12 +31,32 @@
 
 
 /*******************/
+.gallery{
+    &> img{
+        max-width: 100px;
+        max-height: 100px;
+        object-fit: scale-down;
 
-.gallery button{
-    color: black;
+        transition: 0.5s;
+
+        &:hover{
+            transform: scale(2.0);
+            transform-origin: center bottom;
+            
+        }
+    }
+
+    &> button{
+        color: black;
 
 
-    &:hover{
+        &:hover{
+            color: red;
+        }
+
+    }
+
+    &> span{
         color: red;
     }
 }

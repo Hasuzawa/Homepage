@@ -41,7 +41,7 @@ export class Gallery extends React.Component{
         numberOfPhoto = Object.keys(props.photos).length;
         console.log(numberOfPhoto);
 
-        if (numberOfPhoto <= 0){
+        if ( !Number.isInteger(numberOfPhoto) || numberOfPhoto <= 0){
             let errorMessage = `cannot create gallery with improper amount of photo: ${numberOfPhoto}`;
             throw TypeError(errorMessage);
         }
