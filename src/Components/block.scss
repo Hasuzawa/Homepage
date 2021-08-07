@@ -1,16 +1,15 @@
 .job{
     width: auto;
-    flex-basis: 50%;
     max-width: 1500px;
     margin: 20px;
     border: 1px black solid;
     padding: 4px;
 
-}
+    &> div{
+        display: flex;
+        justify-content: space-between;
+    }
 
-.job > div{
-    display: flex;
-    justify-content: space-between;
 }
 
 .job > div > h3{
@@ -27,7 +26,6 @@
 
 
 /* display: grid could be a better choice
-/*flex-basis is not working as intended */
 
 
 /*******************/

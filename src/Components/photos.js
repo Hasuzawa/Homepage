@@ -23,6 +23,24 @@ export const language_Japanese_photos = Object.freeze({
     0: {
         id: 0,
         src: "",
+        alt: "JLPT N1",
+        caption: "The most recognised Japanese Language Test"
+    }
+});
+
+export const language_Chinese_photos = Object.freeze({
+    0: {
+        id: 0,
+        src: "",
+        alt: "HSK level 6",
+        caption: "The most recognised Chinese Language Test"
+    }
+});
+
+export const language_German_photos = Object.freeze({
+    0: {
+        id: 0,
+        src: "",
         alt: "",
         caption: ""
     },
@@ -33,4 +51,3 @@ export const language_Japanese_photos = Object.freeze({
         caption: ""
     }
 });
-

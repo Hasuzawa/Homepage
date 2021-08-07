@@ -5,8 +5,8 @@ export function Job(props){
     return (
         <div className="job">
             <div>
-                <h3>{props.jobTitle}</h3>
-                <span>{props.startDate} - {props.endDate}</span>
+                <h3 className="job--job_title">{props.jobTitle}</h3>
+                <span className="job--date">{props.startDate} - {props.endDate}</span>
             </div>
             <div>
                 <span>{props.company}</span>

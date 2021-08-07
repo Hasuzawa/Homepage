@@ -30,6 +30,17 @@ export function Introduction (){
             <Gallery
                 photos={language_English_photos}
             />
+            <h3>Core values</h3>
+            <h3>Efficiency</h3>
+            <p>In the digital world, there are infinite ways to implement most idea but only a small subset is efficient. To be efficient 
+                is to pursue that singularity.
+            </p>
+            <h3>Timely</h3>
+            <p>There is merit in perfection and there is also virtue in a timely solution. 
+
+            </p>
+            <h3></h3>
+            <p></p>
         </div>
     );
 }
