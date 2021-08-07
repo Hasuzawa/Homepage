@@ -9,10 +9,10 @@ export function Job(props){
                 <span className="job--date">{props.startDate} - {props.endDate}</span>
             </div>
             <div>
-                <span>{props.company}</span>
+                <span className="job--company">{props.company}</span>
             </div>
             <div>
-                <p>{props.description}</p>
+                <p className="job--description">{props.description}</p>
                 {/* image gallery */}
                 <img />
             </div>
@@ -79,35 +79,40 @@ export class Gallery extends React.Component{
 
 
     renderImage(){
+
         var selectedPhoto = this.props.photos[this.state.selectedIndex];
-        console.log("selectedPhoto is ", selectedPhoto);
+
+
 
         return(
             <>  
-                <div>
-                    <img
-                        src={selectedPhoto.src}
-                        alt={selectedPhoto.alt}
-                        width={this.props.image_width}
-                        height={this.props.image_height}
-                    />
-                </div>
-                <div>
-                    <button id="+" onClick={this.handleClick}>◀</button>
-                    <p>{selectedPhoto.caption}</p>
-                    <button id="-" onClick={this.handleClick}>▶</button>
-                </div>
+                <img
+                    className="gallery--image"
+                    src={selectedPhoto.src}
+                    alt={selectedPhoto.alt}
+                    width={this.props.image_width}
+                    height={this.props.image_height}
+                />
             </>
         );
     }
 
 
-
-
     render(){
+
+        var selectedPhoto = this.props.photos[this.state.selectedIndex];
+        console.log("selectedPhoto is ", selectedPhoto);
+
         return(
             <div className="gallery">
-                {this.renderImage()}
+                <div>
+                    {this.renderImage()}
+                </div>
+                <div>
+                    <button id="+" onClick={this.handleClick}>◀</button>
+                    <p className="gallery--caption">{selectedPhoto.caption}</p>
+                    <button id="-" onClick={this.handleClick}>▶</button>
+                </div>
             </div>
         );
     }
@@ -118,9 +123,9 @@ export class Gallery extends React.Component{
 export function Language(props){
     return (
         <div className="language">
-            <h3>{props.heading}</h3>
+            <h3 className="language--heading">{props.heading}</h3>
             <div>
-                <p>{props.description}</p>
+                <p className="language--description">{props.description}</p>
                 <Gallery
                     photos={props.photos}
                     image_width={props.image_width}

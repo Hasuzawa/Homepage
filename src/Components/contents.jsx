@@ -41,6 +41,8 @@ export function Introduction (){
             </p>
             <h3></h3>
             <p></p>
+            <embed src="/pdf/TOEIC_965_certificate_redacted.pdf" width="100%" height="100%" type="application/pdf" />
+            <embed src="/pdf/eiken_grade_1_certificate_redacted.pdf" width="100%" height="100%" type="application/pdf" />
         </div>
     );
 }
