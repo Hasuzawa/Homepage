@@ -2,7 +2,7 @@ import React from "react";
 import {Job} from "./blocks.jsx";
 import "./style.scss";
 
-import {Gallery, Language} from "./blocks.jsx"
+import {Gallery, Language} from "./blocks.jsx";
 import { language_English_photos, language_Japanese_photos, language_German_photos, language_Chinese_photos } from "./photos.js";
 
 //import logo from "/logos/C++_logo.svg";
@@ -72,13 +72,19 @@ export function Projects(){
         <div className="content projects">
 
             <div className="project">
-                <h3><u>Project 1: Website</u></h3>
+                <h3><u>Project 1: Website with React</u></h3>
                 <div>
                     {/* some tags, e.g. HTML, CSS, JavaScript */}
                 </div>
                 
 
                 <p>
+                    <h4>This project features:</h4>
+                    <div>
+                        <ul>React, JSX, JavaScript</ul>
+                        <ul>HTML, CSS, Scss</ul>
+                        <ul>responsive design</ul>
+                    </div>
                     This website is written by me. I used the React framework along with the the standard suite HTML, CSS, JavaScript.<br />
                     I want to keep it simple and it has no dependency on online content nor library, meaning that you can download it and host a local server to preview it even when offline.
                     I also used Scss to refactor the CSS.<br />
@@ -97,22 +103,22 @@ export function Skill(){
             <details open className="skill">
                 <summary>Programming Languages</summary>
                 <div>
-                    <img src="/logos/C_logo.svg" alt="C" height="70px" />
-                    <img src="/logos/C++_logo.svg" alt="C++" height="70px" />
-                    <img src="/logos/Java_logo.svg" alt="Java" height="70px" />
-                    <img src="/logos/Javascript_logo.svg" alt="JavaScript" height="70px" />
-                    <img src="/logos/Python_logo.svg" alt="Python" height="70px" />
+                    <img className="skill--logo" src="/logos/C_logo.svg" alt="C"/>
+                    <img className="skill--logo" src="/logos/C++_logo.svg" alt="C++"/>
+                    <img className="skill--logo" src="/logos/Java_logo.svg" alt="Java"/>
+                    <img className="skill--logo" src="/logos/Javascript_logo.svg" alt="JavaScript"/>
+                    <img className="skill--logo" src="/logos/Python_logo.svg" alt="Python"/>
                 </div>
             </details>
 
             <details open className="skill">
                 <summary>Web Development</summary>
                 <div>
-                    <img src="/logos/HTML5_logo.svg" alt="HTML" height="70px" />
-                    <img src="/logos/CSS3_logo.svg" alt="CSS" height="70px" />
-                    <img src="/logos/React_logo.svg" alt="React" height="70px" />
-                    <img src="/logos/Sass_logo.svg" alt="Sass" height="70px" />
-                    <img src="/logos/Django_logo.svg" alt="Django" height="70px" />
+                    <img className="skill--logo" src="/logos/HTML5_logo.svg" alt="HTML"/>
+                    <img className="skill--logo" src="/logos/CSS3_logo.svg" alt="CSS"/>
+                    <img className="skill--logo" src="/logos/React_logo.svg" alt="React"/>
+                    <img className="skill--logo" src="/logos/Sass_logo.svg" alt="Sass"/>
+                    <img className="skill--logo" src="/logos/Django_logo.svg" alt="Django"/>
                 </div>
             </details>
 

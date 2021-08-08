@@ -165,6 +165,8 @@ $banner-height: 95px;
         display: flex;
         flex-direction: column;
 
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
         .switch_tab{
 
             &.selected{
@@ -228,14 +230,31 @@ $banner-height: 95px;
 
 .skills{
     @extend %flex-column-center;
+
+    .skill{
+        margin: 20px;
+        border: 1px solid black;
+        max-width: 1200px;
+        padding: 6px;
+
+        &> div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            .skill--logo{
+                margin: 5px;
+                width: 70px;
+                height: 70px;
+
+                object-fit: scale-down;
+            }
+        }
+    }
 }
 
-.skill{
-    margin: 20px;
-    border: 1px solid black;
-    max-width: 1200px;
-    padding: 6px;
-}
+
 
 
 @keyframes fade-in-effect{

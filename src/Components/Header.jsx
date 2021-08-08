@@ -1,9 +1,8 @@
 import React from "react";
 import "./style.scss";
 import buttons from "./buttons.json";
-import { render } from "@testing-library/react";
 
-import "components/responsive.scss";
+import "./responsive.scss";
 
 export default class Header extends React.Component{
     constructor(props){
@@ -21,7 +20,7 @@ export default class Header extends React.Component{
                     key={buttons[button].id}
                     id={buttons[button].id}
                     onClick={this.props.handleClick}
-                    className={"switch_tab " + (this.props.selectedTab === buttons[button].id ? "selected" : null)}
+                    className={"switch_tab " + (this.props.selectedTab === buttons[button].id ? "selected" : "")}
                 >
                     {buttons[button].buttonName}
                 </button>
