@@ -11,7 +11,7 @@ export function Job(props){
             <div>
                 <span className="job--company">{props.company}</span>
             </div>
-            <div>
+            <div className="job--content">
                 <p className="job--description">{props.description}</p>
                 {/* image gallery */}
                 <img />
@@ -32,7 +32,7 @@ export class Gallery extends React.Component{
         //console.log(props.photos["photo_0"].caption);
 
         console.log(props.photos[0].caption);
-        console.log(props.photos[1].caption);
+        //console.log(props.photos[1].caption);
 
 
 
@@ -53,6 +53,7 @@ export class Gallery extends React.Component{
 
         this.handleClick = this.handleClick.bind(this);
         this.renderImage = this.renderImage.bind(this);
+        this.renderButton = this.renderButton.bind(this);
     }
 
 
@@ -79,22 +80,54 @@ export class Gallery extends React.Component{
 
 
     renderImage(){
+        var selectedPhoto = this.props.photos[this.state.selectedIndex];
+        console.log(selectedPhoto.src);
+        if (this.props.imageType === "pdf"){
+            return (
+                <>  
+                    <embed
+                        className="gallery--image"
+                        src={selectedPhoto.src}
+                        width={this.props.image_width}
+                        height={this.props.image_height}
+                        type="application/pdf"
+                    />
+                </>
 
+            );
+        } else {
+            return(
+                <>  
+                    <img
+                        className="gallery--image"
+                        src={selectedPhoto.src}
+                        alt={selectedPhoto.alt}
+                        width={this.props.image_width}
+                        height={this.props.image_height}
+                    />
+                </>
+            );
+        }
+    }
+
+    renderButton(){
         var selectedPhoto = this.props.photos[this.state.selectedIndex];
 
-
-
-        return(
-            <>  
-                <img
-                    className="gallery--image"
-                    src={selectedPhoto.src}
-                    alt={selectedPhoto.alt}
-                    width={this.props.image_width}
-                    height={this.props.image_height}
-                />
-            </>
-        );
+        if (this.state.numberOfPhoto === 1){
+            return (
+                <>
+                    <p className="gallery--caption">{selectedPhoto.caption}</p>
+                </>
+            );
+        } else {
+            return (
+                <>
+                    <button id="+" onClick={this.handleClick}>◀</button>
+                    <p className="gallery--caption">{selectedPhoto.caption}</p>
+                    <button id="-" onClick={this.handleClick}>▶</button>
+                </>
+            );
+        }
     }
 
 
@@ -109,9 +142,7 @@ export class Gallery extends React.Component{
                     {this.renderImage()}
                 </div>
                 <div>
-                    <button id="+" onClick={this.handleClick}>◀</button>
-                    <p className="gallery--caption">{selectedPhoto.caption}</p>
-                    <button id="-" onClick={this.handleClick}>▶</button>
+                    {this.renderButton()}
                 </div>
             </div>
         );
@@ -128,6 +159,7 @@ export function Language(props){
                 <p className="language--description">{props.description}</p>
                 <Gallery
                     photos={props.photos}
+                    imageType={props.imageType}
                     image_width={props.image_width}
                     image_height={props.image_width}
                 />

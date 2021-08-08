@@ -3,7 +3,7 @@ import {Job} from "./blocks.jsx";
 import "./style.scss";
 
 import {Gallery, Language} from "./blocks.jsx"
-import { language_English_photos } from "./photos.js";
+import { language_English_photos, language_Japanese_photos, language_German_photos, language_Chinese_photos } from "./photos.js";
 
 //import logo from "/logos/C++_logo.svg";
 
@@ -133,25 +133,20 @@ export function Skill(){
                     heading="English"
                     description="I have lived in a city bilingual in English and Chinese for over 20 years. The vast majority of my education is completed using English."
                     photos={language_English_photos}
+                    imageType="pdf"
+                    image_width="400px"
+                    image_height="700px"
+                />
+                
+                <Language
+                    heading="Japanese"
+                    description="I am working in Japan and has passed the highest level of the most recognised Japanese language exam."
+                    photos={language_Japanese_photos}
+                    imageType="pdf"
                     image_width="400px"
                     image_height="700px"
                 />
 
-{/*                 <h3>English</h3>
-                    <div>
-                        <p>
-                            I have lived in a city bilingual in English and Chinese for over 20 years. The vast majority of my education is completed using English.
-                        </p>
-                        <Gallery photos={language_English_photos}/>
-                    </div> */}
-
-                <h3>Japanese</h3>
-                    <blockquote>
-
-                    </blockquote>
-                    <p>
-                        I am working in Japan and has passed the highest level of the most recognised Japanese language exam.
-                    </p>
                 <h3>German</h3>
                     <blockquote>
 

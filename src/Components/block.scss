@@ -16,10 +16,18 @@
         padding: 0px;
     }
 
-    .job--date, .job--company{
+    .job--job_title, .job--date, .job--company{
         margin: 4px;
         border: 0px;
         padding: 0px;
+    }
+
+    .job--content{
+
+        .job--description{
+            
+        }
+
     }
 
 }
@@ -45,7 +53,7 @@
 
         &:hover{
             /* might want to scale up and display at the left\right to not block the buttons */
-            transform: scale(2.0);
+            /*transform: scale(2.0);*/
             transform-origin: center bottom;
             
         }

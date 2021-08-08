@@ -35,7 +35,7 @@ export default class Header extends React.Component{
             <div className="filler"></div>
             {this.renderButtons()}
             <div className="filler"></div>
-            <button className="fold-button" onClick={this.props.handleFold}>{this.props.bannerFolded ? "▼" : "▲"}</button>
+            <button className="fold_button" onClick={this.props.handleFold}>{this.props.bannerFolded ? "▼" : "▲"}</button>
 
             {/* special bar for small screen, e.g. phone */}
             {/* could place some font-change / light, dark mode switch button here etc */}

@@ -41,25 +41,40 @@ $banner-height: 95px;
     top: 0px;
     display: flex;
     background-color: rgb(207, 207, 207);
-    /*box-shadow: 0px 5px 5px black;*/
+
     overflow: auto;
+
+    *{
+        border-bottom: $header-border solid black;
+    }
+
+    &> span{
+        margin: 0px;
+        padding: 10px 12px;
+        font-size: 20px;
+        color: black;
+    }
+
+    &> button{
+
+    }
+
+    &> .filler{
+        flex-grow: 1;
+    }
+
+    &.fold_button{
+
+    }
 }
 
 
-%header-border-bottom{
+/*%header-border-bottom{
     border-bottom: $header-border solid black;
-}
-
-.header > span{
-    @extend %header-border-bottom;
-
-    margin: 0px;
-    padding: 10px 12px;
-    font-size: 20px;
-    color: black;
-}
+}*/
 
 .header > button{
+    flex-basis: 120px;
     border: $header-border transparent;
     border-bottom: $header-border solid black;
 
@@ -73,6 +88,7 @@ $banner-height: 95px;
     
     
     &.selected{
+        padding-top: (10 - $header-border);
         background-color: white;
         border: $header-border solid black;
         border-bottom: $header-border transparent;
@@ -88,13 +104,7 @@ $banner-height: 95px;
     }
 }
 
-/* should have a thematic consistence in some colour */
 
-.header > div.filler{
-    @extend %header-border-bottom;
-
-    flex-grow: 1;
-}
 
 /*not used now */
 .tab-menu button{
