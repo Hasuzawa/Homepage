@@ -39,12 +39,11 @@ $banner-height: 95px;
 .header{
     position: sticky;
     top: 0px;
-    display: flex;
     background-color: rgb(207, 207, 207);
 
-    overflow: auto;
+    display: flex;
 
-    *{
+    &> *{
         border-bottom: $header-border solid black;
     }
 
@@ -55,7 +54,35 @@ $banner-height: 95px;
         color: black;
     }
 
-    &> button{
+    &> .switch_tab{
+        flex-basis: 120px;
+        border: $header-border transparent;
+        border-bottom: $header-border solid black;
+    
+        margin: 0px;
+        padding: 10px 12px;
+        display: inline-block;
+        cursor: pointer;
+        background-color: transparent;
+        color: black;
+        font-size: 20px;
+        
+        
+        &.selected{
+            padding-top: (10 - $header-border);
+            background-color: white;
+            border: $header-border solid black;
+            border-bottom: $header-border transparent;
+        }
+    
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    
+        &:active{
+            /* change this */
+            background-color: rgba(236, 61, 61, 0.2);
+        }
 
     }
 
@@ -63,59 +90,100 @@ $banner-height: 95px;
         flex-grow: 1;
     }
 
-    &.fold_button{
-
+    &> .bar_button, .fold_button{
+        margin: 0px;
+        padding: 10px 12px;
+        font-size: 20px;
+        border: $header-border transparent;
+        border-bottom: $header-border solid black;
+        background-color: transparent;
+        cursor: pointer;
     }
-}
 
-
-/*%header-border-bottom{
-    border-bottom: $header-border solid black;
-}*/
-
-.header > button{
-    flex-basis: 120px;
-    border: $header-border transparent;
-    border-bottom: $header-border solid black;
-
-    margin: 0px;
-    padding: 10px 12px;
-    display: inline-block;
-    cursor: pointer;
-    background-color: transparent;
-    color: black;
-    font-size: 20px;
     
-    
-    &.selected{
-        padding-top: (10 - $header-border);
-        background-color: white;
-        border: $header-border solid black;
-        border-bottom: $header-border transparent;
+    &> .bar_button{
+        font-weight: bold;
+        transform: scaleX(2);
+    }
+}
+
+
+.dropdown_menu{
+    position: relative;
+    display: none;
+
+    &> .dropdown_menu--icon{
+        width: 45px;
+        height: 100%;
+        border: 0;
+        background-color: transparent;
+
+        font-size: 30px;
+        //padding: 0 12px;
+
+        //testing
+
+        &:hover{
+            background: red;
+        }
+
     }
 
-    &:hover{
-        background-color: rgba(0, 0, 0, 0.2);
+    .dropdown_menu--content{
+        display: none;
+        position: absolute;
+        right: 0;
+
+        border: 2px solid black;
+        width: 120px;
+
+        background-color: rgb(207, 207, 207);
+
+
+        .switch_tab{
+            margin: 0;
+            border: 0;
+            padding: 0;
+
+            
+            flex: 0 0 40px;
+            width: 100%;
+            background-color: transparent;
+
+            font-size: 20px;
+        }
+    }
+}
+
+.dropdown_menu:hover{
+
+    .dropdown_menu--icon{
+        color: green;
     }
 
-    &:active{
-        /* change this */
-        background-color: rgba(236, 61, 61, 0.2);
+    .dropdown_menu--content{
+        display: flex;
+        flex-direction: column;
+
+        .switch_tab{
+
+            &.selected{
+                background-color: rgb(219, 157, 157);
+            }
+        
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+        
+            &:active{
+                
+            }
+        }
     }
 }
 
 
 
-/*not used now */
-.tab-menu button{
-    width: 100%;
-    height: 50px;
-    display: inline-block;
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    font-size: 30px;
-}
 
 /************************/
 

@@ -1,6 +1,9 @@
 import React from "react";
 import "./style.scss";
 import buttons from "./buttons.json";
+import { render } from "@testing-library/react";
+
+import "components/responsive.scss";
 
 export default class Header extends React.Component{
     constructor(props){
@@ -18,7 +21,7 @@ export default class Header extends React.Component{
                     key={buttons[button].id}
                     id={buttons[button].id}
                     onClick={this.props.handleClick}
-                    className={this.props.selectedTab === buttons[button].id ? "selected" : null}
+                    className={"switch_tab " + (this.props.selectedTab === buttons[button].id ? "selected" : null)}
                 >
                     {buttons[button].buttonName}
                 </button>
@@ -35,11 +38,35 @@ export default class Header extends React.Component{
             <div className="filler"></div>
             {this.renderButtons()}
             <div className="filler"></div>
+            <DropdownMenu
+                handleClick={this.props.handleClick}
+                selectedTab={this.props.selectedTab}
+                buttons={this.renderButtons()}
+            />
             <button className="fold_button" onClick={this.props.handleFold}>{this.props.bannerFolded ? "▼" : "▲"}</button>
 
-            {/* special bar for small screen, e.g. phone */}
             {/* could place some font-change / light, dark mode switch button here etc */}
         </nav>
+        );
+    }
+}
+
+
+
+
+export class DropdownMenu extends React.Component{
+    constructor(props){
+        super(props);
+    }
+
+    render(){
+        return (
+            <div className="dropdown_menu">
+                <button className="dropdown_menu--icon">≡</button>
+                <div className="dropdown_menu--content">
+                    {this.props.buttons}
+                </div>
+            </div>
         );
     }
 }
