@@ -4,13 +4,21 @@ import "./block.scss";
 export function Job(props){
     return (
         <div className="job">
+            {/* timeline */}
+{/*             <div className="job--timeline">
+                <div className="timeline_symbol" />
+            </div> */}
+
             <div className="job--boxed">
                 <div className="job--boxed--first_line">
                     <h3 className="job--job_title">{props.jobTitle}</h3>
                     <span className="job--date">{props.startDate} - {props.endDate}</span>
                 </div>
                 <div className="job--boxed--second_line">
-                    <span className="job--company">{props.company}</span>
+                    <span className="job--company"><a href={props.company_url}>{props.company}</a></span>
+                </div>
+                <div className="job--boxed--third_line">
+                    <StringToLogo techs={props.techs}/>
                 </div>
                 <div className="job--content">
                     <p className="job--description">{props.description}</p>
@@ -174,3 +182,36 @@ export function Language(props){
 
 /*************************/
 
+export class StringToLogo extends React.Component{
+
+    static toLogo = {
+        "C": <img className="skill_logo" src="/logos/C_logo.svg" alt="C"/>,
+        "C++": <img className="skill_logo" src="/logos/C++_logo.svg" alt="C++"/>,
+        "Java": <img className="skill_logo" src="/logos/Java_logo.svg" alt="Java"/>,
+        "JavaScript": <img className="skill_logo" src="/logos/Javascript_logo.svg" alt="JavaScript"/>,
+        "Python": <img className="skill_logo" src="/logos/Python_logo.svg" alt="Python"/>,
+
+        "HTML": <img className="skill_logo" src="/logos/HTML5_logo.svg" alt="HTML"/>,
+        "CSS": <img className="skill_logo" src="/logos/CSS3_logo.svg" alt="CSS"/>,
+        "React": <img className="skill_logo" src="/logos/React_logo.svg" alt="React"/>,
+        "Sass": <img className="skill_logo" src="/logos/Sass_logo.svg" alt="Sass"/>,
+        "Django": <img className="skill_logo" src="/logos/Django_logo.svg" alt="Django"/>,
+    }
+
+    constructor(props){
+        super(props);
+
+        this.stringToJSX = this.stringToJSX.bind(this);
+    }
+
+    stringToJSX(string, index){
+        let logo_JSX = StringToLogo.toLogo[string];
+        console.log(index);
+        return React.cloneElement(logo_JSX, {key: index});
+    }
+
+    render(){
+        return this.props.techs.map((str, index) => this.stringToJSX(str, index));
+    }
+
+}

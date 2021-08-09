@@ -87,10 +87,12 @@ export function WorkExperience(){
         <div className="content work-experience">
             {/* you would likely further refactor this into json in the future*/}
             <Job
-                jobTitle="Programmer -> System Engineer"
-                startDate="15 March 2021"
+                jobTitle="Programmer -> System&nbsp;Engineer"
+                startDate="15&nbsp;March&nbsp;2021"
                 endDate="current"
                 company="NetValue Co., Ltd. (Japan)"
+                company_url="https://www.netvalue-io.com/"
+                techs={["HTML","CSS","JavaScript","Java"]}
                 description="I worked as a programmer and later system engineer. I implemented both frontend and backend of a intranet sytem.
                     In the forntend, I used HTML, JavaScript, CSS to display data and send information to the backend by API. In the backend,
                     I used Java, SQL to handle downloading, returning enquired information or updating the database."
@@ -111,7 +113,7 @@ export function Projects(){
                 </div>
                 
 
-                <p>
+                <div>
                     <h4>This project features:</h4>
                     <div>
                         <ul>React, JSX, JavaScript</ul>
@@ -122,7 +124,7 @@ export function Projects(){
                     I want to keep it simple and it has no dependency on online content nor library, meaning that you can download it and host a local server to preview it even when offline.
                     I also used Scss to refactor the CSS.<br />
                     The source code is available at <a href="https://github.com/Hasuzawa/homepage">GitHub</a>.
-                </p>
+                </div>
             </div>
         </div>
     );
