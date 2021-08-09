@@ -185,6 +185,24 @@ $banner-height: 95px;
 }
 
 
+.toTheTopButton{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+    .arrow_symbol{
+        margin: 0;
+        border: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+
+        background-color: black;
+
+        //clip-path: polygon(50% 20%, 30% 40%, 40% 40%, 40% 90%, 60% 90%, 60% 80%, 40% 80%, 40% 70%, 60% 70%, 60% 60%, 40% 60%, 40% 50%, 60% 50%, 60% 40%, 70% 40%);
+        clip-path: polygon(50% 20%, 30% 40%, 40% 40%, 40% 70%, 60% 70%, 60% 60%, 40% 60%, 40% 50%, 60% 50%, 60% 40%, 70% 40%);
+    }
+}
 
 
 /************************/

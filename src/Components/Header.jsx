@@ -42,6 +42,7 @@ export default class Header extends React.Component{
                 selectedTab={this.props.selectedTab}
                 buttons={this.renderButtons()}
             />
+            <ToTheTopButton />
             <button className="fold_button" onClick={this.props.handleFold}>{this.props.bannerFolded ? "▼" : "▲"}</button>
 
             {/* could place some font-change / light, dark mode switch button here etc */}
@@ -53,7 +54,7 @@ export default class Header extends React.Component{
 
 
 
-export class DropdownMenu extends React.Component{
+class DropdownMenu extends React.Component{
     constructor(props){
         super(props);
     }
@@ -68,4 +69,13 @@ export class DropdownMenu extends React.Component{
             </div>
         );
     }
+}
+
+
+function ToTheTopButton(){
+    return (
+        <div className="toTheTopButton" onClick={()=>window.location.href="#root"}>
+            <div className="arrow_symbol"/>
+        </div>
+    );
 }
