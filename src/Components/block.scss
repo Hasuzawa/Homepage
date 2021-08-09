@@ -1,13 +1,31 @@
 .job{
-    width: auto;
-    max-width: 1500px;
-    margin: 20px;
-    border: 1px black solid;
-    padding: 4px;
+    display: flex;
+    justify-content: center;
 
-    &> div{
+    width: 100%;
+    background-color: rgb(240, 255, 254);
+
+    &> .job--boxed{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
+
+        max-width: 1500px;
+        margin: 20px;
+        border: 1px solid black;
+
+
+        .job--boxed--first_line{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+
+        .job--boxed--second_line{
+
+        }
     }
 
     .job--description{
@@ -36,6 +54,7 @@
 
 
 /*******************/
+
 .gallery{
     flex-direction: column;
     border: 2px solid black;

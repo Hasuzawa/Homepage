@@ -11,38 +11,72 @@ import { language_English_photos, language_Japanese_photos, language_German_phot
 export function Introduction (){
     return (
         <div className="content introduction">
-            <h3>Hasuzawa@Home</h3>
-            <p>
-                Welcome to the homepage of Hasuzawa. This is primarily my portfolio.<br />
-                I prefer to keep my projects maintained at one place. For the latest progress and projects, please visit my <a href="https://github.com/Hasuzawa">GitHub</a>.
-            </p>
-            <h3>About me</h3>
-            <p>
-                I am a programmer and system engineer currently working in Osaka, Japan. I have worked on a large-scale intranet system by implementing frontend using HTML, CSS, JavaScript for frontend to enter data and display result from database.<br />
-                In the backend, I used Java, SQL to connect to database to update or fetch data.
-                I can programme in C, C++, Java, JavaScript and Python. As a web developer, I can programme in HTML, CSS, JavaScript and React. I also use Sass, Git.<br />
-                
-                In addition to my programming abilities, I am also a polygot and can speak a total of 6 languages and dialects, including English, German, Japanese and Chinese. I am invaluable in an
-                increasingly interconnected world, in which diverse culture and nationality is the norm.
-                <br />
-                I am actively looking for job opportunities. I am willing to relocate to another city or country while preparing for the job beforehand if I receive a formal offer.
-            </p>
-            <Gallery
-                photos={language_English_photos}
-            />
-            <h3>Core values</h3>
-            <h3>Efficiency</h3>
-            <p>In the digital world, there are infinite ways to implement most idea but only a small subset is efficient. To be efficient 
-                is to pursue that singularity.
-            </p>
-            <h3>Timely</h3>
-            <p>There is merit in perfection and there is also virtue in a timely solution. 
-
-            </p>
-            <h3></h3>
-            <p></p>
-            <embed src="/pdf/TOEIC_965_certificate_redacted.pdf" width="100%" height="100%" type="application/pdf" />
-            <embed src="/pdf/eiken_grade_1_certificate_redacted.pdf" width="100%" height="100%" type="application/pdf" />
+            <div className="introduction--section0">
+                <h1>Hasuzawa@Home</h1>
+                <p>
+                    Welcome to my homepage. This is primarily my portfolio.<br />
+                    I have gathered all my work experiences, skills on this website. <br />
+                    For the latest progress on projects, please visit my <a href="https://github.com/Hasuzawa">GitHub</a>.
+                </p>
+            </div>
+            <div className="introduction--section1">
+                <h1>Values</h1>
+                <div className="values">
+                    <div className="value">
+                        <h2>Efficiency</h2>
+                        <p>In the digital world, there are infinite ways to implement most idea but only a small subset is efficient.
+                            To be efficient is to pursue that singularity among possibilities.
+                        </p>
+                    </div>
+                    <div className="value">
+                        <h2>Timely</h2>
+                        <p>There is merit in perfection and there is also virtue in a timely solution. I know the importance of precious
+                            time and make the best of it during and outside work.
+                        </p>
+                    </div>
+                    <div className="value">               
+                        <h2>Initiative</h2>
+                        <p>The modern world changes fast. I constantly learn new techs, languages, frameworks and improve my skill
+                            to prepare for unforeseen challenges and opportunities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className="introduction--section2">    
+                <h1>About me</h1>
+                <p>I am a fullstack developer and system engineer currently working in Osaka, Japan.</p>
+                <div className="domains">
+                    <div className="domain">
+                        <h2>Frontend</h2>
+                        <p>I have used HTML, CSS and JavaScript to design frontend for fetching data input and display HLML response.
+                            I also have project done using React and Sass.
+                        </p>
+                    </div>
+                    <div className="domain">
+                        <h2>Backend</h2>
+                        <p>I have implemented a backend to a intranet system using Java and SQL connected to a PostgreSQL database.
+                            I also know Python, Django and C++.
+                        </p>
+                    </div>
+                    <div className="domain">
+                        <h2>System Engineer</h2>
+                        <p>content_here</p>
+                    </div>
+                    <div className="domain">
+                        <h2>Soft Skills</h2>
+                        <p>I am a polygot in real life and can speak a total of 6 languages and dialects, including English, German, Japanese and Chinese.
+                            I am invaluable in an increasingly interconnected world, in which diverse culture and nationality is the norm.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className="introduction--section3">
+                <h1>Interested?</h1>
+                <p>
+                    I am actively looking for job opportunities.
+                    I am willing to relocate to another city or country while preparing for the job beforehand if I receive a formal offer.
+                </p>
+            </div>
         </div>
     );
 }
@@ -61,7 +95,6 @@ export function WorkExperience(){
                     In the forntend, I used HTML, JavaScript, CSS to display data and send information to the backend by API. In the backend,
                     I used Java, SQL to handle downloading, returning enquired information or updating the database."
             />
-            
         </div>
     );
 }

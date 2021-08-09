@@ -4,17 +4,19 @@ import "./block.scss";
 export function Job(props){
     return (
         <div className="job">
-            <div>
-                <h3 className="job--job_title">{props.jobTitle}</h3>
-                <span className="job--date">{props.startDate} - {props.endDate}</span>
-            </div>
-            <div>
-                <span className="job--company">{props.company}</span>
-            </div>
-            <div className="job--content">
-                <p className="job--description">{props.description}</p>
-                {/* image gallery */}
-                <img />
+            <div className="job--boxed">
+                <div className="job--boxed--first_line">
+                    <h3 className="job--job_title">{props.jobTitle}</h3>
+                    <span className="job--date">{props.startDate} - {props.endDate}</span>
+                </div>
+                <div className="job--boxed--second_line">
+                    <span className="job--company">{props.company}</span>
+                </div>
+                <div className="job--content">
+                    <p className="job--description">{props.description}</p>
+                    {/* image gallery */}
+                    <img />
+                </div>
             </div>
         </div>
     );

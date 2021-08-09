@@ -70,6 +70,7 @@ $banner-height: 95px;
         
         &.selected{
             padding-top: (10 - $header-border);
+            padding-bottom: (10 + $header-border);
             background-color: white;
             border: $header-border solid black;
             border-bottom: $header-border transparent;
@@ -204,6 +205,17 @@ $banner-height: 95px;
     }
 }
 
+.toTheTopButton:hover .arrow_symbol{
+    animation: upward-fade-out-in-effect 1s infinite;
+}
+
+@keyframes upward-fade-out-in-effect{
+    0% {opacity: 100%; transform: translateY(0);}
+    40% {opacity: 0%; transform: translateY(-50%);}
+    60% {opacity: 0%; transform: translateY(50%);}
+    100% {opacity: 100%; transform: translateY(0);}
+}
+
 
 /************************/
 
@@ -218,8 +230,62 @@ $banner-height: 95px;
     overflow: auto;
 }
 
-.introduction *{
-    max-width: 1200px;
+
+
+.introduction{
+    width: 100%;
+
+    &> div{
+        width: 100%;
+    }
+
+    &> div:nth-child(odd){
+        background-color: rgb(255, 250, 230);
+    }
+
+    &> div:nth-child(even){
+        background-color: rgb(228, 240, 255);
+    }
+
+    .introduction--section1{
+
+        .values{
+            @extend %flex-row-wrap-space_evenly-center;
+
+            .value{
+                box-sizing: content-box;
+                flex: 0.2 0 300px;
+                margin: 10px;
+                border: 0;
+                padding: 5px;
+            }
+        }
+
+    }
+
+    .introduction--section2{
+
+        
+        .domains{
+        @extend %flex-row-wrap-space_evenly-center;
+
+            .domain{
+                box-sizing: content-box;
+                flex: 0.2 0 300px;
+                margin: 10px;
+                border: 0;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+%flex-row-wrap-space_evenly-center{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 %flex-column-center{
@@ -227,6 +293,7 @@ $banner-height: 95px;
     flex-direction: column;
     align-items: center;
 }
+
 
 .work-experience{
     
