@@ -45,8 +45,6 @@ export default class Header extends React.Component{
             />
             <ToTheTopButton />
             <button className="fold_button" onClick={this.props.handleFold}>{this.props.bannerFolded ? "▼" : "▲"}</button>
-
-            {/* could place some font-change / light, dark mode switch button here etc */}
         </nav>
         );
     }
@@ -75,8 +73,6 @@ class DropdownMenu extends React.Component{
 
 function ToTheTopButton(){
     return (
-        <div className="toTheTopButton" onClick={()=>window.location.href="#root"}>
-            <div className="arrow_symbol"/>
-        </div>
+        <button className="toTheTopButton" onClick={()=>window.location.href="#root"}/>
     );
 }

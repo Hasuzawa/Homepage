@@ -187,16 +187,25 @@ $banner-height: 95px;
 
 
 .toTheTopButton{
+    margin: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+    background-color: transparent;
     width: 50px;
     height: 50px;
     cursor: pointer;
 
-    .arrow_symbol{
-        margin: 0;
-        border: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 43.8px;
+
+        width: 50px;
+        height: 50px;
 
         background-color: black;
 
@@ -205,8 +214,10 @@ $banner-height: 95px;
     }
 }
 
-.toTheTopButton:hover .arrow_symbol{
-    animation: upward-fade-out-in-effect 1s infinite;
+.toTheTopButton:hover{
+    &::before{
+        animation: upward-fade-out-in-effect 1s infinite;
+    }
 }
 
 @keyframes upward-fade-out-in-effect{
