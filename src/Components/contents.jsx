@@ -7,6 +7,8 @@ import { language_English_photos, language_Japanese_photos, language_German_phot
 
 //import logo from "/logos/C++_logo.svg";
 
+//import "./responsive.scss";
+
 
 export function Introduction (){
     return (

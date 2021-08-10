@@ -1,8 +1,9 @@
 import React from "react";
-import "./style.scss";
+
 import buttons from "./buttons.json";
 
 import "./responsive.scss";
+import "./style.scss";
 
 export default class Header extends React.Component{
     constructor(props){

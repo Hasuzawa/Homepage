@@ -1,5 +1,10 @@
 import React from "react";
+
+
 import "./block.scss";
+import "./responsive.scss";
+
+
 
 export function Job(props){
     return (
@@ -18,12 +23,13 @@ export function Job(props){
                     <span className="job--company"><a href={props.company_url}>{props.company}</a></span>
                 </div>
                 <div className="job--boxed--third_line">
+                    <span>Techs used:</span>
                     <StringToLogo techs={props.techs}/>
                 </div>
-                <div className="job--content">
-                    <p className="job--description">{props.description}</p>
+                <div className="job--boxed--fourth_line" id="job--last_section">
+                    <p className="job--description" id="job--description">{props.description}</p>
+                    <img className="job--photo" id="job--photo" src="/logos/C_logo.svg" alt="C"></img>
                     {/* image gallery */}
-                    <img />
                 </div>
             </div>
         </div>

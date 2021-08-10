@@ -11,4 +11,21 @@
         }
     }
 
+    /******************/
+
+    #job--last_section{
+        flex-direction: column-reverse;
+        align-items: center;
+
+        &> #job--description{
+            box-sizing: border-box;
+            width: 95%;
+
+        }
+
+        &> #job--photo{
+            width: 95%;
+
+        }
+    }
 }

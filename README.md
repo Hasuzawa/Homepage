@@ -1,15 +1,17 @@
 # Homepage of Hasuzawa
-This is the [homepage of Hasuzawa](). This is not a collaborative project but I welcome ideas and suggestions.
-The website is a SAP(single page application) written with React, JSX, Sass and the standard suite (HTML,CSS,JS).
+This is my [homepage](). This is not a collaborative project but I welcome ideas and suggestions.
+The website is a single page application written with React, Sass and the standard HTML,CSS,JS.
+<br />
 For a structural overview of the website, please visit [the Wiki of this project](https://github.com/Hasuzawa/homepage/wiki/Overview).
 Alternatively, utilise the [official google plugin](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 
-The brief outline of the website is given below.
+The summary of the website is given below.
 
 ## Introduction
-I am a programmer with science background. I can programme in a variety of languages and stack.<br />
+I am a full stack developer with science background. I can programme in a variety of languages and stack.<br />
 
 I am also a polygot and can speak 6 langauges and dialects in real life. The ability to communicate with people around the world is invaluable in an increasingly globalised world <br />
+I value efficiency, time and initiative. 
 I am willing to move across city and country while prepare for the job beforehand if I receive a formal offer.
 
 ## Work Experience
@@ -26,31 +28,32 @@ I am willing to move across city and country while prepare for the job beforehan
   <summary>languages, techs and tools</summary>
 
   ### Programming Languages
-  <p width="20px" height="20px"></p>
-  <img src="./public/logos/C_logo.svg" alt="C" width="70">
-  <img src="./public/logos/C++_logo.svg" alt="C++" width="70">
-  <img src="./public/logos/Java_logo.svg" alt="Java" width="70">
-  <img src="./public/logos/Python_logo.svg" alt="Python" width="70">
+  <p height="10px"></p>
+  <img src="./public/logos/C_logo.svg" alt="C" width="70" height="70" object-fit="scale-down">
+  <img src="./public/logos/C++_logo.svg" alt="C++" width="70" height="70" object-fit="scale-down">
+  <img src="./public/logos/Java_logo.svg" alt="Java" width="70" height="70" object-fit="scale-down">
+  <img src="./public/logos/Python_logo.svg" alt="Python" width="70" height="70" object-fit="scale-down">
+  <img src="./public/logos/Javascript_logo.svg" alt="Javascript" width="70 "height="70" object-fit="scale-down">
 
   ### Web Development
-  <!-- span will be sanitised on GitHub! Although in VS code it shows --->
-  <img src="./public/logos/HTML5_logo.svg" alt="HTML" height="70">
-  <span style="margin: 10px"><img src="./public/logos/CSS3_logo.svg" alt="CSS" height="70"></span>
-  <img src="./public/logos/Javascript_logo.svg" alt="Javascript" height="70">
-  <img src="./public/logos/React_logo.svg" alt="React" height="70">
-  <img src="./public/logos/Sass_logo.svg" alt="Sass" height="70">
-
-
-
+  <p height="10px"></p>
+  <img src="./public/logos/HTML5_logo.svg" alt="HTML" width="70" height="70" object-fit="scale-down">
+  <img src="./public/logos/CSS3_logo.svg" alt="HTML" width="70" height="70" object-fit="scale-down">
+  
+  <img src="./public/logos/React_logo.svg" alt="React" width="70" height="70" object-fit="scale-down">
+  <img src="./public/logos/Sass_logo.svg" alt="Sass" width="70" height="70" object-fit="scale-down">
+  <img src="./public/logos/Django_logo.svg" alt="Django" width="70" height="70" object-fit="scale-down">
 
   ### Technology
   -  knowledge on networking, server, OSI model, IP address, MAC address.
   -  basic knowledge on cyber security and vulnerability including cross-site scrpting, password cracking techniques, authentication, public key crytography.
 
   ### Graphics
-   - Gimp
-   - Inkscape
-
+  <p height="10px"></p>
+  <img src="./public/logos/Gimp_logo.svg" alt="Gimp" width="70" height="70" object-fit="scale-down">
+  <img src="./public/logos/Inkscape_logo.svg" alt="Inkscape" width="70" height="70" object-fit="scale-down">
+   <br />I primarily use Gimp for raster graphics and Inkscape for vector graphics.
+   <p height="50px"></p>
   ### Languages
   -  English
      I am bilingual in English and Chinese.

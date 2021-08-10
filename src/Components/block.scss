@@ -52,29 +52,49 @@
 
         .job--boxed--third_line{
             display: flex;
-            flex-direction: row;
+            flex-flow: row wrap;
             justify-content: flex-start;
+            align-items: center;
+        }
+
+
+        .job--boxed--fourth_line{
+            display: flex;
+            flex-direction: row;
+            //justify-content: space-between;
+
+            .job--description{
+                //flex: 0.4 0.6 800px;
+                width: 66%;
+
+                margin: 10px;
+                border: 2px solid black;
+                padding: 6px;
+
+                //background-color: white;
+                overflow-y: auto;
+
+
+
+            }
+
+            .job--photo{
+                //flex: 0.6 0.4 400px;
+                width: 34%;
+                max-width: 500px;
+                max-height: 800px;
+
+                margin: 20px;
+
+                object-fit: scale-down;
+            }
         }
     }
 
-    .job--description{
-        margin: 4px;
+    .job--job_title, .job--date, .job--company, .job--description{
+        margin: 6px;
         border: 0px;
         padding: 0px;
-    }
-
-    .job--job_title, .job--date, .job--company{
-        margin: 4px;
-        border: 0px;
-        padding: 0px;
-    }
-
-    .job--content{
-
-        .job--description{
-            
-        }
-
     }
 
 }
@@ -144,25 +164,16 @@
 
 .language{
 
-<<<<<<< HEAD
-    h3{
-
-=======
 
     .language--heading{
         color: blue;
->>>>>>> 391c310815905bc86b273f6e1b0c0565b704742a
     }
 
     &> div{
         display: flex;
         flex-direction: row;
 
-<<<<<<< HEAD
-        &> p{  
-=======
         .language--description{  
->>>>>>> 391c310815905bc86b273f6e1b0c0565b704742a
             padding: 4px;
             max-height: 200px;
             min-width: 0px;
