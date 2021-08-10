@@ -196,12 +196,22 @@ export class StringToLogo extends React.Component{
         "Java": <img className="skill_logo" src="/logos/Java_logo.svg" alt="Java"/>,
         "JavaScript": <img className="skill_logo" src="/logos/Javascript_logo.svg" alt="JavaScript"/>,
         "Python": <img className="skill_logo" src="/logos/Python_logo.svg" alt="Python"/>,
+        "TypeScript": <img className="skill_logo" src="/logos/Typescript_logo.svg" alt="TypeScript"/>,
+
 
         "HTML": <img className="skill_logo" src="/logos/HTML5_logo.svg" alt="HTML"/>,
         "CSS": <img className="skill_logo" src="/logos/CSS3_logo.svg" alt="CSS"/>,
         "React": <img className="skill_logo" src="/logos/React_logo.svg" alt="React"/>,
-        "Sass": <img className="skill_logo" src="/logos/Sass_logo.svg" alt="Sass"/>,
-        "Django": <img className="skill_logo" src="/logos/Django_logo.svg" alt="Django"/>,
+        "Sass": <img className="skill_logo" style={{"width": "80px"}} src="/logos/Sass_logo.svg" alt="Sass"/>,
+        "Django": <img className="skill_logo" style={{"width": "100px"}} src="/logos/Django_logo.svg" alt="Django"/>,
+
+        "Gimp": <img className="skill_logo" src="/logos/Gimp_logo.svg" alt="Gimp"/>,
+        "Inkscape": <img className="skill_logo" src="/logos/Inkscape_logo.svg" alt="Inkscape"/>,
+
+        //"GraphQL": <img className="skill_logo" src="/logos/GraphQL_logo.svg" alt="GraphQL"/>,
+
+        "PostgreSQL": <img className="skill_logo" src="/logos/PostgreSQL_logo.svg" alt="PostgreSQL"/>
+
     }
 
     constructor(props){
@@ -212,7 +222,9 @@ export class StringToLogo extends React.Component{
 
     stringToJSX(string, index){
         let logo_JSX = StringToLogo.toLogo[string];
-        console.log(index);
+        if (logo_JSX === undefined){
+            throw TypeError(`The following string does not a corresponding logo: ${string}`)
+        }
         return React.cloneElement(logo_JSX, {key: index});
     }
 

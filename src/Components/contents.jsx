@@ -95,7 +95,7 @@ export function WorkExperience(){
                 endDate="current"
                 company="NetValue Co., Ltd. (Japan)"
                 company_url="https://www.netvalue-io.com/"
-                techs={["HTML","CSS","JavaScript","Java"]}
+                techs={["HTML","CSS","JavaScript","Java","PostgreSQL"]}
                 /* description="I started as a programmer and later full stack developer. I implemented both frontend and backend of a intranet sytem.
                     In the forntend, I used HTML, JavaScript, CSS to display data and send information to the backend by API. In the backend,
                     I used Java, SQL to handle downloading, returning enquired information or updating the database." */
@@ -171,7 +171,9 @@ export function Skill(){
                         <div className="skill--technology">
                             <h3>Networking</h3>
                             <p>I am a nationally qualified information engineer in Japan.
-                                I have knowledge on HTTP(S), IPv4 and IPv6 address, subnet, OSI model, server, memory types, binary, byte endian.
+                                I have knowledge on HTTP(S), IPv4 and IPv6 address, subnet, OSI model, server, DHCP,
+                                <ruby>Address Resolution Protocol<rp>(</rp><rt>ARP</rt><rp>)</rp></ruby>,
+                                memory types, binary, byte endian, port number, SSH.
                             </p>
                         </div>
 {/*                         <div className="skill--technology">
@@ -185,30 +187,65 @@ export function Skill(){
                                 In this year (2021), a new Region was opened in Osaka.
                             </p>
                         </div>
+                        <div className="skill--technology">
+                            <h3>Graphics</h3>
+                            <div>
+                                <StringToLogo techs={["Gimp","Inkscape"]}/>
+                            </div>
+                            <p>I primarily use Gimp for raster graphics and Inkscape for vector graphics.
+                                I also have some experience using Adobe Flash and Adobe Animation.
+                            </p>
+                        </div>
                     </div>
                 </details>
             </div>
             <div className="skills--section">
-                <details open className="skill">
+                <details open className="skill language_section">
                     <summary>Languages</summary>
+                    <p>Due to privacy and security concern, personal information have been redacted.<br />
+                        I can send original versions to verify I am the owner if you contact me directly.
+                    </p>
                     <div className="skill--languages">
-                        <div className="skill--langauge">
+                        <div className="skill--language">
                             <h3>English</h3>
-                            
+                            <embed
+                                className="language--pdf"
+                                src="/pdf/TOEIC_965_certificate_redacted.pdf#toolbar=0"
+                                type="application/pdf"
+                                alt="TOEIC 965"
+                            />
                             <p>text here</p>
                         </div>
-                        <div className="skill--langauge">
+                        <div className="skill--language">
                             <h3>Japanese</h3>
+                            <embed
+                                className="language--pdf"
+                                src="/pdf/JLPT_N1_redacted.pdf#toolbar=0"
+                                type="application/pdf"
+                                alt="Japanese Language Proficiency Test N1"
+                            />
                             <p>test here</p>
                         </div>
-                        <div className="skill--langauge">
+                        <div className="skill--language">
                             <h3>German</h3>
+                            <embed
+                                className="language--pdf"
+                                src="/pdf/Goethe_Institut_B1_reading_certificate_redacted.pdf"
+                                type="application/pdf"
+                                alt="Goethe Institut B1 Reading passed"
+                            />
                             <p>
                                 I can understand daily life German and can read German news and publications.
                             </p>
                         </div>
-                        <div className="skill--langauge">
+                        <div className="skill--language">
                             <h3>Chinese</h3>
+                            <embed
+                                className="language--pdf"
+                                src="/pdf/HSK_level_6_certificate_redacted.pdf"
+                                type="application/pdf"
+                                alt="Chinese Proficiency Test Level 6"
+                            />
                             <p>
                                 I am a native speaker of Chinese and two more dialects.
                             </p>
@@ -242,13 +279,14 @@ export function Skill(){
 
 export function Contact(){
     return (
-        <div className="content">
-            <h1>5th page</h1>
+        <div className="content contact">
+            <h3>I am happy you are reading this.</h3>
             <p>
-                I can be reached at <a href="https://github.com/Hasuzawa">GitHub</a> or Linkdeln. This website is in fact hosted on GitHub and you can see the source code there.<br />
-                Collaboration, enquiry, job offer are all welcomed.
+                
+                I can be reached at <a href="https://github.com/Hasuzawa">GitHub</a>.<br />
+                This website is hosted on GitHub and you can see the source code there.<br />
+                Collaboration, enquiry, compensated offer are all welcomed.<br />
             </p>
-            {/* format it better later */}
         </div>
     );
 }
