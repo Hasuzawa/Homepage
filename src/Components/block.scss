@@ -1,36 +1,89 @@
 .job{
-    width: auto;
-    flex-basis: 50%;
-    max-width: 1500px;
-    margin: 20px;
-    border: 1px black solid;
-    padding: 4px;
-
-}
-
-.job > div{
     display: flex;
-    justify-content: space-between;
-}
+    flex-direction: row;
+    justify-content: center;
 
-.job > div > h3{
-    margin: 4px;
-    border: 0px;
-    padding: 0px;
-}
+    width: 100%;
+    background-color: rgb(240, 255, 254);
 
-.job > div > span{
-    margin: 4px;
-    border: 0px;
-    padding: 0px;
-}
+/*     .job--timeline{
+        flex: 0 0 50px;
+        background-color: green;
 
+        .timeline_symbol{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            background-color: red;
+            clip-path: polygon();
+
+        }
+    } */
+
+    &> .job--boxed{
+        flex: 1 1 auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        max-width: 1500px;
+        margin: 20px;
+        border: 1px solid black;
+
+
+        .job--boxed--first_line{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+
+        .job--boxed--second_line{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+        }
+
+
+        .job--boxed--third_line{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+    }
+
+    .job--description{
+        margin: 4px;
+        border: 0px;
+        padding: 0px;
+    }
+
+    .job--job_title, .job--date, .job--company{
+        margin: 4px;
+        border: 0px;
+        padding: 0px;
+    }
+
+    .job--content{
+
+        .job--description{
+            
+        }
+
+    }
+
+}
 
 /* display: grid could be a better choice
-/*flex-basis is not working as intended */
 
 
 /*******************/
+
 .gallery{
     flex-direction: column;
     border: 2px solid black;
@@ -41,14 +94,14 @@
     }
 
 
-    & img{
+    .gallery--image{
         object-fit: scale-down;
 
         transition: 0.5s ease-in-out;
 
         &:hover{
             /* might want to scale up and display at the left\right to not block the buttons */
-            transform: scale(2.0);
+            /*transform: scale(2.0);*/
             transform-origin: center bottom;
             
         }
@@ -72,7 +125,7 @@
     
         }
     
-        &> p{
+        &> .gallery--caption{
             background-color: yellow;
 
             color: green;
@@ -91,21 +144,30 @@
 
 .language{
 
+<<<<<<< HEAD
     h3{
 
+=======
+
+    .language--heading{
+        color: blue;
+>>>>>>> 391c310815905bc86b273f6e1b0c0565b704742a
     }
 
     &> div{
         display: flex;
         flex-direction: row;
 
+<<<<<<< HEAD
         &> p{  
+=======
+        .language--description{  
+>>>>>>> 391c310815905bc86b273f6e1b0c0565b704742a
             padding: 4px;
             max-height: 200px;
             min-width: 0px;
             flex-shrink: 1;
             width: 70%;
-            
         }
 
         &> .gallery{
@@ -115,4 +177,15 @@
 
         }
     }
+}
+
+
+/***********************/
+
+.skill_logo{
+    margin: 5px;
+    width: 70px;
+    height: 70px;
+
+    object-fit: scale-down;
 }

@@ -4,17 +4,27 @@ import "./block.scss";
 export function Job(props){
     return (
         <div className="job">
-            <div>
-                <h3>{props.jobTitle}</h3>
-                <span>{props.startDate} - {props.endDate}</span>
-            </div>
-            <div>
-                <span>{props.company}</span>
-            </div>
-            <div>
-                <p>{props.description}</p>
-                {/* image gallery */}
-                <img />
+            {/* timeline */}
+{/*             <div className="job--timeline">
+                <div className="timeline_symbol" />
+            </div> */}
+
+            <div className="job--boxed">
+                <div className="job--boxed--first_line">
+                    <h3 className="job--job_title">{props.jobTitle}</h3>
+                    <span className="job--date">{props.startDate} - {props.endDate}</span>
+                </div>
+                <div className="job--boxed--second_line">
+                    <span className="job--company"><a href={props.company_url}>{props.company}</a></span>
+                </div>
+                <div className="job--boxed--third_line">
+                    <StringToLogo techs={props.techs}/>
+                </div>
+                <div className="job--content">
+                    <p className="job--description">{props.description}</p>
+                    {/* image gallery */}
+                    <img />
+                </div>
             </div>
         </div>
     );
@@ -32,7 +42,7 @@ export class Gallery extends React.Component{
         //console.log(props.photos["photo_0"].caption);
 
         console.log(props.photos[0].caption);
-        console.log(props.photos[1].caption);
+        //console.log(props.photos[1].caption);
 
 
 
@@ -53,6 +63,7 @@ export class Gallery extends React.Component{
 
         this.handleClick = this.handleClick.bind(this);
         this.renderImage = this.renderImage.bind(this);
+        this.renderButton = this.renderButton.bind(this);
     }
 
 
@@ -80,34 +91,69 @@ export class Gallery extends React.Component{
 
     renderImage(){
         var selectedPhoto = this.props.photos[this.state.selectedIndex];
-        console.log("selectedPhoto is ", selectedPhoto);
+        console.log(selectedPhoto.src);
+        if (this.props.imageType === "pdf"){
+            return (
+                <>  
+                    <embed
+                        className="gallery--image"
+                        src={selectedPhoto.src}
+                        width={this.props.image_width}
+                        height={this.props.image_height}
+                        type="application/pdf"
+                    />
+                </>
 
-        return(
-            <>  
-                <div>
+            );
+        } else {
+            return(
+                <>  
                     <img
+                        className="gallery--image"
                         src={selectedPhoto.src}
                         alt={selectedPhoto.alt}
                         width={this.props.image_width}
                         height={this.props.image_height}
                     />
-                </div>
-                <div>
+                </>
+            );
+        }
+    }
+
+    renderButton(){
+        var selectedPhoto = this.props.photos[this.state.selectedIndex];
+
+        if (this.state.numberOfPhoto === 1){
+            return (
+                <>
+                    <p className="gallery--caption">{selectedPhoto.caption}</p>
+                </>
+            );
+        } else {
+            return (
+                <>
                     <button id="+" onClick={this.handleClick}>◀</button>
-                    <p>{selectedPhoto.caption}</p>
+                    <p className="gallery--caption">{selectedPhoto.caption}</p>
                     <button id="-" onClick={this.handleClick}>▶</button>
-                </div>
-            </>
-        );
+                </>
+            );
+        }
     }
 
 
-
-
     render(){
+
+        var selectedPhoto = this.props.photos[this.state.selectedIndex];
+        console.log("selectedPhoto is ", selectedPhoto);
+
         return(
             <div className="gallery">
-                {this.renderImage()}
+                <div>
+                    {this.renderImage()}
+                </div>
+                <div>
+                    {this.renderButton()}
+                </div>
             </div>
         );
     }
@@ -118,15 +164,54 @@ export class Gallery extends React.Component{
 export function Language(props){
     return (
         <div className="language">
-            <h3>{props.heading}</h3>
+            <h3 className="language--heading">{props.heading}</h3>
             <div>
-                <p>{props.description}</p>
+                <p className="language--description">{props.description}</p>
                 <Gallery
                     photos={props.photos}
+                    imageType={props.imageType}
                     image_width={props.image_width}
                     image_height={props.image_width}
                 />
             </div>
         </div>
     );
+}
+
+
+
+/*************************/
+
+export class StringToLogo extends React.Component{
+
+    static toLogo = {
+        "C": <img className="skill_logo" src="/logos/C_logo.svg" alt="C"/>,
+        "C++": <img className="skill_logo" src="/logos/C++_logo.svg" alt="C++"/>,
+        "Java": <img className="skill_logo" src="/logos/Java_logo.svg" alt="Java"/>,
+        "JavaScript": <img className="skill_logo" src="/logos/Javascript_logo.svg" alt="JavaScript"/>,
+        "Python": <img className="skill_logo" src="/logos/Python_logo.svg" alt="Python"/>,
+
+        "HTML": <img className="skill_logo" src="/logos/HTML5_logo.svg" alt="HTML"/>,
+        "CSS": <img className="skill_logo" src="/logos/CSS3_logo.svg" alt="CSS"/>,
+        "React": <img className="skill_logo" src="/logos/React_logo.svg" alt="React"/>,
+        "Sass": <img className="skill_logo" src="/logos/Sass_logo.svg" alt="Sass"/>,
+        "Django": <img className="skill_logo" src="/logos/Django_logo.svg" alt="Django"/>,
+    }
+
+    constructor(props){
+        super(props);
+
+        this.stringToJSX = this.stringToJSX.bind(this);
+    }
+
+    stringToJSX(string, index){
+        let logo_JSX = StringToLogo.toLogo[string];
+        console.log(index);
+        return React.cloneElement(logo_JSX, {key: index});
+    }
+
+    render(){
+        return this.props.techs.map((str, index) => this.stringToJSX(str, index));
+    }
+
 }

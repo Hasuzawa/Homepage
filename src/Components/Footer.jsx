@@ -6,7 +6,7 @@ export default function Footer(){
         <div className="footer">
             <p>Hasuzawa@Home</p>
             {/* dont use # to scroll to top */}
-            <a href="#">return to top</a>
+            <a href="#root">return to top</a>
             {/*add some github icon link and contact info */}
         </div>
     );
