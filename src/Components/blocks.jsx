@@ -16,7 +16,7 @@ export function Job(props){
 
             <div className="job--boxed">
                 <div className="job--boxed--first_line">
-                    <h3 className="job--job_title">{props.jobTitle}</h3>
+                    <h2 className="job--job_title">{props.jobTitle}</h2>
                     <span className="job--date">{props.startDate} - {props.endDate}</span>
                 </div>
                 <div className="job--boxed--second_line">
@@ -27,7 +27,7 @@ export function Job(props){
                     <StringToLogo techs={props.techs}/>
                 </div>
                 <div className="job--boxed--fourth_line" id="job--last_section">
-                    <p className="job--description" id="job--description">{props.description}</p>
+                    <div className="job--description" id="job--description">{props.description}</div>
                     <img className="job--photo" id="job--photo" src="/logos/C_logo.svg" alt="C"></img>
                     {/* image gallery */}
                 </div>

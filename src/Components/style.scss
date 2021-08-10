@@ -301,13 +301,29 @@ $banner-height: 95px;
 
 
 .projects{
+    background-color: rgb(242, 255, 234);
 
 }
 
 .project{
     margin: 10px;
-    border: 1px solid black;
-    padding: 4px;
+    border: 2px solid black;
+    padding: 8px;
+
+    max-width: 1500px;
+
+    .project--title{
+        margin: 10px;
+    }
+
+    .project--description{
+
+        *{
+            text-align: start;
+        }
+
+
+    }
 }
 
 
@@ -316,13 +332,34 @@ $banner-height: 95px;
 .skills{
     @extend %flex-column-center;
 
+    .skills--section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        &:nth-child(odd){
+            background-color: rgb(255, 225, 225);
+        }
+
+        &:nth-child(even){
+            background-color: rgb(229, 255, 214);
+        }
+    }
+
+
     .skill{
         margin: 20px;
-        border: 1px solid black;
-        max-width: 1200px;
+        //border: 1px solid black;
+        max-width: 1500px;
         padding: 6px;
 
+        summary{
+            font-size: 20px;
+        }
+
         &> div{
+            margin: 10px;
+
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -338,6 +375,39 @@ $banner-height: 95px;
         }
     }
 }
+
+
+
+.skill--technologies{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    width: 90%;
+    max-width: 1500px;
+
+
+    .skill--technology{
+        flex: 1 1 400px;
+        margin: 10px;
+    }
+}
+
+.skill--languages{
+
+
+
+    .skill--language{
+        
+    }
+}
+
+
+
+
+
+
+
 
 
 

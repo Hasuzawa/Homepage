@@ -4,6 +4,7 @@ import "./style.scss";
 
 import {Gallery, Language} from "./blocks.jsx";
 import { language_English_photos, language_Japanese_photos, language_German_photos, language_Chinese_photos } from "./photos.js";
+import { StringToLogo } from "./blocks.jsx";
 
 //import logo from "/logos/C++_logo.svg";
 
@@ -95,9 +96,16 @@ export function WorkExperience(){
                 company="NetValue Co., Ltd. (Japan)"
                 company_url="https://www.netvalue-io.com/"
                 techs={["HTML","CSS","JavaScript","Java"]}
-                description="I worked as a programmer and later system engineer. I implemented both frontend and backend of a intranet sytem.
+                /* description="I started as a programmer and later full stack developer. I implemented both frontend and backend of a intranet sytem.
                     In the forntend, I used HTML, JavaScript, CSS to display data and send information to the backend by API. In the backend,
-                    I used Java, SQL to handle downloading, returning enquired information or updating the database."
+                    I used Java, SQL to handle downloading, returning enquired information or updating the database." */
+                description={
+                <>
+                    <h3>role</h3>
+                    <p>text goes here</p>
+                    <h3>accomplishment</h3>
+                    <p>I designed</p>
+                </>}
             />
         </div>
     );
@@ -109,23 +117,27 @@ export function Projects(){
         <div className="content projects">
 
             <div className="project">
-                <h3><u>Project 1: Website with React</u></h3>
+                <h2 className="project--title"><u>Project 1: Website with React</u></h2>
                 <div>
-                    {/* some tags, e.g. HTML, CSS, JavaScript */}
+                    <StringToLogo techs={["HTML","CSS","JavaScript","React","Sass"]}/>
                 </div>
-                
-
-                <div>
-                    <h4>This project features:</h4>
-                    <div>
-                        <ul>React, JSX, JavaScript</ul>
-                        <ul>HTML, CSS, Scss</ul>
-                        <ul>responsive design</ul>
-                    </div>
-                    This website is written by me. I used the React framework along with the the standard suite HTML, CSS, JavaScript.<br />
-                    I want to keep it simple and it has no dependency on online content nor library, meaning that you can download it and host a local server to preview it even when offline.
-                    I also used Scss to refactor the CSS.<br />
-                    The source code is available at <a href="https://github.com/Hasuzawa/homepage">GitHub</a>.
+                <div className="project--description">
+                    <h3>This project features:</h3>
+                    <ul>
+                        <li>React, JSX, JavaScript. List rendering, functional and class component.</li>
+                        <li>HTML, CSS, Scss. Various graphics, HTML element and nested selector.</li>
+                        <li>responsive design. Page layout is different for shorter screen for greater readability.</li>
+                        <li>animation and interactive buttons. What is changed and what can be clicked should be intuitive.</li>
+                        <li>tab-indexed buttons.(not fully implemented yet)</li>
+                    </ul>
+                    <p>
+                    This website is written by me. I used the React framework along with standard HTML, CSS, JavaScript.<br />
+                    I want to keep it simple and organised. it has no dependency on any library, such as JQuery.
+                    I used Scss to refactor and organise CSS. I am aware of frameworks such as Bootstrap and Tailwind, but they tend to
+                    further obfuscate an already complex HTML tree. This defeats the purpose of separating the web content
+                    and how it is presented. But I will give it a try in the future.<br />
+                    The website is hosted on GitHub and the source code is available at <a href="https://github.com/Hasuzawa/homepage">GitHub</a>.
+                    </p>
                 </div>
             </div>
         </div>
@@ -136,75 +148,94 @@ export function Projects(){
 export function Skill(){
     return (
         <div className="content skills">
+            <div className="skills--section">
+                <details open className="skill">
+                    <summary>Programming Languages</summary>
+                    <div>
+                        <StringToLogo techs={["C","C++","Java","JavaScript","Python"]}/>
+                    </div>
+                </details>
+            </div>
+            <div className="skills--section">
+                <details open className="skill">
+                    <summary>Web Development</summary>
+                    <div>
+                        <StringToLogo techs={["HTML","CSS","React","Sass","Django"]}/>
+                    </div>
+                </details>
+            </div>
+            <div className="skills--section">
+                <details open className="skill">
+                    <summary>Technology</summary>
+                    <div className="skill--technologies">
+                        <div className="skill--technology">
+                            <h3>Networking</h3>
+                            <p>I am a nationally qualified information engineer in Japan.
+                                I have knowledge on HTTP(S), IPv4 and IPv6 address, subnet, OSI model, server, memory types, binary, byte endian.
+                            </p>
+                        </div>
+{/*                         <div className="skill--technology">
+                            <h3>Cyber Security</h3>
+                            <p></p>
+                        </div> */}
+                        <div className="skill--technology">
+                            <h3>Cloud Computing</h3>
+                            <img className="AWS_badge_cloud_practitioner" href="" alt="AWS Cloud Practitioner"/>
+                            <p>I am a certificated AWS Cloud Practitioner. I know the servies on AWS.
+                                In this year (2021), a new Region was opened in Osaka.
+                            </p>
+                        </div>
+                    </div>
+                </details>
+            </div>
+            <div className="skills--section">
+                <details open className="skill">
+                    <summary>Languages</summary>
+                    <div className="skill--languages">
+                        <div className="skill--langauge">
+                            <h3>English</h3>
+                            
+                            <p>text here</p>
+                        </div>
+                        <div className="skill--langauge">
+                            <h3>Japanese</h3>
+                            <p>test here</p>
+                        </div>
+                        <div className="skill--langauge">
+                            <h3>German</h3>
+                            <p>
+                                I can understand daily life German and can read German news and publications.
+                            </p>
+                        </div>
+                        <div className="skill--langauge">
+                            <h3>Chinese</h3>
+                            <p>
+                                I am a native speaker of Chinese and two more dialects.
+                            </p>
+                        </div>
 
-            <details open className="skill">
-                <summary>Programming Languages</summary>
-                <div>
-                    <img className="skill--logo" src="/logos/C_logo.svg" alt="C"/>
-                    <img className="skill--logo" src="/logos/C++_logo.svg" alt="C++"/>
-                    <img className="skill--logo" src="/logos/Java_logo.svg" alt="Java"/>
-                    <img className="skill--logo" src="/logos/Javascript_logo.svg" alt="JavaScript"/>
-                    <img className="skill--logo" src="/logos/Python_logo.svg" alt="Python"/>
-                </div>
-            </details>
+                    </div>
 
-            <details open className="skill">
-                <summary>Web Development</summary>
-                <div>
-                    <img className="skill--logo" src="/logos/HTML5_logo.svg" alt="HTML"/>
-                    <img className="skill--logo" src="/logos/CSS3_logo.svg" alt="CSS"/>
-                    <img className="skill--logo" src="/logos/React_logo.svg" alt="React"/>
-                    <img className="skill--logo" src="/logos/Sass_logo.svg" alt="Sass"/>
-                    <img className="skill--logo" src="/logos/Django_logo.svg" alt="Django"/>
-                </div>
-            </details>
+{/*                     <Language
+                        heading="English"
+                        description="I have lived in a city bilingual in English and Chinese for over 20 years. The vast majority of my education is completed using English."
+                        photos={language_English_photos}
+                        imageType="pdf"
+                        image_width="400px"
+                        image_height="700px"
+                    />
+                    
+                    <Language
+                        heading="Japanese"
+                        description="I am working in Japan and has passed the highest level of the most recognised Japanese language exam."
+                        photos={language_Japanese_photos}
+                        imageType="pdf"
+                        image_width="400px"
+                        image_height="700px"
+                    /> */}
 
-            <details open className="skill">
-                <summary>Technology</summary>
-                <h3>Networking</h3>
-                <p>I am a qualified .
-                    I have knowledge on HTTP, IP addresses, subnet, OSI model, server.
-                </p>
-                <h3>Cyber Security</h3>
-                <p></p>
-            </details>
-
-            <details open className="skill">
-                <summary>Languages</summary>
-
-                <Language
-                    heading="English"
-                    description="I have lived in a city bilingual in English and Chinese for over 20 years. The vast majority of my education is completed using English."
-                    photos={language_English_photos}
-                    imageType="pdf"
-                    image_width="400px"
-                    image_height="700px"
-                />
-                
-                <Language
-                    heading="Japanese"
-                    description="I am working in Japan and has passed the highest level of the most recognised Japanese language exam."
-                    photos={language_Japanese_photos}
-                    imageType="pdf"
-                    image_width="400px"
-                    image_height="700px"
-                />
-
-                <h3>German</h3>
-                    <blockquote>
-
-                    </blockquote>
-                    <p>
-                        I can understand daily life German and can read German news and publications.
-                    </p>
-                <h3>Chinese</h3>
-                    <blockquote>
-
-                    </blockquote>
-                    <p>
-                        I am a native speaker of Chinese and two more dialects.
-                    </p>
-            </details>
+                </details>
+            </div>
         </div>
     );
 }
