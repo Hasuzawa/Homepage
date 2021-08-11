@@ -205,10 +205,12 @@ export class StringToLogo extends React.Component{
         "Sass": <img className="skill_logo" style={{"width": "80px"}} src="/logos/Sass_logo.svg" alt="Sass"/>,
         "Django": <img className="skill_logo" style={{"width": "100px"}} src="/logos/Django_logo.svg" alt="Django"/>,
 
-        "Gimp": <img className="skill_logo" src="/logos/Gimp_logo.svg" alt="Gimp"/>,
+        "Gimp": <img className="skill_logo" src="/logos/Gimp_logo.svg" alt="Gimp" style={{objectFit: "contain"}}/>,
         "Inkscape": <img className="skill_logo" src="/logos/Inkscape_logo.svg" alt="Inkscape"/>,
 
         //"GraphQL": <img className="skill_logo" src="/logos/GraphQL_logo.svg" alt="GraphQL"/>,
+
+        "Apache": <img className="skill_logo" src="/logos/Apache_logo.png" alt="Apache"/>,
 
         "PostgreSQL": <img className="skill_logo" src="/logos/PostgreSQL_logo.svg" alt="PostgreSQL"/>
 

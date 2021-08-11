@@ -95,7 +95,7 @@ export function WorkExperience(){
                 endDate="current"
                 company="NetValue Co., Ltd. (Japan)"
                 company_url="https://www.netvalue-io.com/"
-                techs={["HTML","CSS","JavaScript","Java","PostgreSQL"]}
+                techs={["HTML","CSS","JavaScript","Java","Apache", "PostgreSQL"]}
                 /* description="I started as a programmer and later full stack developer. I implemented both frontend and backend of a intranet sytem.
                     In the forntend, I used HTML, JavaScript, CSS to display data and send information to the backend by API. In the backend,
                     I used Java, SQL to handle downloading, returning enquired information or updating the database." */
@@ -192,7 +192,7 @@ export function Skill(){
                         </div> */}
                         <div className="skill--technology">
                             <h3>Cloud Computing</h3>
-                            <img className="AWS_badge_cloud_practitioner" href="" alt="AWS Cloud Practitioner"/>
+                            <img className="AWS_badge" src="logos/AWS_Cloud_Practitioner_logo.png" alt="AWS Cloud Practitioner"/>
                             <p>I am a certificated AWS Cloud Practitioner. I know the servies on AWS.
                                 In this year (2021), a new Region was opened in Osaka.
                             </p>
