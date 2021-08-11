@@ -1,29 +1,42 @@
 # Homepage of Hasuzawa
 This is my [homepage](). This is not a collaborative project but I welcome ideas and suggestions.
-The website is a single page application written with React, Sass and the standard HTML,CSS,JS.
-<br />
+
+The website is a single page application written with React, Sass and standard HTML,CSS,JS.
+
 For a structural overview of the website, please visit [the Wiki of this project](https://github.com/Hasuzawa/homepage/wiki/Overview).
 Alternatively, utilise the [official google plugin](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 
 The summary of the website is given below.
 
-## Introduction
-I am a full stack developer with science background. I can programme in a variety of languages and stack.<br />
+## Personal Background
+I am a full stack developer with science background. I can programme in a variety of languages and am familiar with many popular frameworks.
 
-I am also a polygot and can speak 6 langauges and dialects in real life. The ability to communicate with people around the world is invaluable in an increasingly globalised world <br />
-I value efficiency, time and initiative. 
-I am willing to move across city and country while prepare for the job beforehand if I receive a formal offer.
+I value efficiency, time and self-improvement. I am still in the stage of learning but has already
+acquired sufficient skills to contribute.
+
+I am also a polygot and can speak 6 langauges and dialects in real life. The ability to communicate with people around the world is invaluable in an increasingly globalised world.
+
+I am open to opportunities that requires relocation.
 
 ## Work Experience
 <details>
   <summary open>full-stack developer and system engineer</summary>
-  Currently I am working as a programmer and system engineer in Osaka, Japan.<br />
-  I worked on a part of intranet system that controls the connection of subnets.<br>
+  Currently I am working as a full stack developer in Osaka, Japan.
+
+  I worked on a part of intranet system that monitor subnets.
   I implemented a frontend with HTML, CSS, Javascript in the frontend as a GUI for controlling connections.
-  In the backend, I programmed the logic using Java and SQL to fetch the relevant data for the frontend and to update the database.
+  In the backend, I programmed the logic using Java and SQL to fetch the relevant data for the frontend and to update the database in a HTTP request & response cycle.
 </details>
 
-## Knowledge
+## Project
+<details>
+   <summary open>Lifetime learning</summary>
+   It is recommended to go to the page of each project for a more comprehensive summary.
+   -  Website with React (this project)
+
+</details>
+
+## Skill
 <details open>
   <summary>languages, techs and tools</summary>
 
@@ -42,7 +55,8 @@ I am willing to move across city and country while prepare for the job beforehan
   
   <img src="./public/logos/React_logo.svg" alt="React" width="70" height="70">
   <img src="./public/logos/Sass_logo.svg" alt="Sass" width="80" height="70">
-  <img src="./public/logos/Django_logo.svg" alt="Django" width="100" height="70"><br />
+  <img src="./public/logos/Django_logo.svg" alt="Django" width="100">
+
   I have written my own homepage from zero.
 
   ### Technology
@@ -50,22 +64,24 @@ I am willing to move across city and country while prepare for the job beforehan
   -  basic knowledge on cyber security and vulnerability including cross-site scrpting, password cracking techniques, authentication, public key crytography.
 
   ### Cloud Computing
-  <img src="./public/logos/AWS_CP_logo.svg" alt="AWS Cloud Practitioner" width="70" height="70"><br />
+  <img src="./public/logos/AWS_CP_logo.svg" alt="AWS Cloud Practitioner" width="70" height="70">
+
   I know the services provided by AWS.
 
   ### Graphics
-  <img src="./public/logos/Gimp_logo.svg" alt="Gimp" width="70" height="70">
-  <img src="./public/logos/Inkscape_logo.svg" alt="Inkscape" width="70" height="70"><br />
+  <img src="./public/logos/Gimp_logo.svg" alt="Gimp" width="80">
+  <img src="./public/logos/Inkscape_logo.svg" alt="Inkscape" width="70" height="70">
+
   I primarily use Gimp for raster graphics and Inkscape for vector graphics. Both are free and open-source.
 
   ### Languages
-  -  English
+  -  English<br />
      I am bilingual in English and Chinese.
-  -  Japanese
+  -  Japanese<br />
      I live and work in Japan right now and has passed the highest level of the most recognised Japanese exam JLPT.
-  -  German
+  -  German<br />
      I can understand daily life German and can read German news and publications.
-  -  Chinese
+  -  Chinese<br />
      In addition to Mandarin, I can speak two more dialects.
 </details>
 

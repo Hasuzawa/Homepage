@@ -172,34 +172,39 @@
 
 /*************************/
 
-.language{
+.skill--languages{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    width: 100%;
 
 
-    .language--heading{
-        color: blue;
-    }
 
-    &> div{
-        display: flex;
-        flex-direction: row;
+    .skill--language{
+        flex: 1 1 700px;
 
-        .language--description{  
-            padding: 4px;
-            max-height: 200px;
-            min-width: 0px;
-            flex-shrink: 1;
-            width: 70%;
+        margin-bottom: 20px;
+
+        .language--pdf{
+            width: 90%;
+            height: 800px;
         }
 
-        &> .gallery{
-            border: 10px solid red;
-            width: 30%;
-            flex-shrink: 0;
-
+        .langauge--preload, .language--description{
+            max-width: 400px;
+            display: inline-flex;
+            text-align: center;
         }
+
+        .language--button{
+            width: 130px;
+            height: 50px;
+            font-size: 18px;
+        }
+
     }
 }
-
 
 /***********************/
 

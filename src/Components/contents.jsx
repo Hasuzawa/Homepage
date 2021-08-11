@@ -4,7 +4,7 @@ import "./style.scss";
 
 import {Gallery, Language} from "./blocks.jsx";
 import { language_English_photos, language_Japanese_photos, language_German_photos, language_Chinese_photos } from "./photos.js";
-import { StringToLogo } from "./blocks.jsx";
+import { StringToLogo, Languages } from "./blocks.jsx";
 
 //import logo from "/logos/C++_logo.svg";
 
@@ -128,7 +128,7 @@ export function Projects(){
                         <li>HTML, CSS, Scss. Various graphics, HTML element and nested selector.</li>
                         <li>responsive design. Page layout is different for shorter screen for greater readability.</li>
                         <li>animation and interactive buttons. What is changed and what can be clicked should be intuitive.</li>
-                        <li>tab-indexed buttons.(not fully implemented yet)</li>
+                        <li>tab-indexed buttons. You can navigate the whole website using tab and arrow keys.</li>
                     </ul>
                     <p>
                     This website is written by me. I used the React framework along with standard HTML, CSS, JavaScript.<br />
@@ -172,8 +172,8 @@ export function Skill(){
                             <h3>Networking</h3>
                             <p>I am a nationally qualified information engineer in Japan.
                                 I have knowledge on HTTP(S), IPv4 and IPv6 address, subnet, OSI model, server, DHCP,
-                                <ruby>Address Resolution Protocol<rp>(</rp><rt>ARP</rt><rp>)</rp></ruby>,
-                                memory types, binary, byte endian, port number, SSH.
+                                Address Resolution Protocol,
+                                memory types, port number, SSH.
                             </p>
                         </div>
 {/*                         <div className="skill--technology">
@@ -201,76 +201,7 @@ export function Skill(){
             </div>
             <div className="skills--section">
                 <details open className="skill language_section">
-                    <summary>Languages</summary>
-                    <p>Due to privacy and security concern, personal information have been redacted.<br />
-                        I can send original versions to verify I am the owner if you contact me directly.
-                    </p>
-                    <div className="skill--languages">
-                        <div className="skill--language">
-                            <h3>English</h3>
-                            <embed
-                                className="language--pdf"
-                                src="/pdf/TOEIC_965_certificate_redacted.pdf#toolbar=0"
-                                type="application/pdf"
-                                alt="TOEIC 965"
-                            />
-                            <p>text here</p>
-                        </div>
-                        <div className="skill--language">
-                            <h3>Japanese</h3>
-                            <embed
-                                className="language--pdf"
-                                src="/pdf/JLPT_N1_redacted.pdf#toolbar=0"
-                                type="application/pdf"
-                                alt="Japanese Language Proficiency Test N1"
-                            />
-                            <p>test here</p>
-                        </div>
-                        <div className="skill--language">
-                            <h3>German</h3>
-                            <embed
-                                className="language--pdf"
-                                src="/pdf/Goethe_Institut_B1_reading_certificate_redacted.pdf"
-                                type="application/pdf"
-                                alt="Goethe Institut B1 Reading passed"
-                            />
-                            <p>
-                                I can understand daily life German and can read German news and publications.
-                            </p>
-                        </div>
-                        <div className="skill--language">
-                            <h3>Chinese</h3>
-                            <embed
-                                className="language--pdf"
-                                src="/pdf/HSK_level_6_certificate_redacted.pdf"
-                                type="application/pdf"
-                                alt="Chinese Proficiency Test Level 6"
-                            />
-                            <p>
-                                I am a native speaker of Chinese and two more dialects.
-                            </p>
-                        </div>
-
-                    </div>
-
-{/*                     <Language
-                        heading="English"
-                        description="I have lived in a city bilingual in English and Chinese for over 20 years. The vast majority of my education is completed using English."
-                        photos={language_English_photos}
-                        imageType="pdf"
-                        image_width="400px"
-                        image_height="700px"
-                    />
-                    
-                    <Language
-                        heading="Japanese"
-                        description="I am working in Japan and has passed the highest level of the most recognised Japanese language exam."
-                        photos={language_Japanese_photos}
-                        imageType="pdf"
-                        image_width="400px"
-                        image_height="700px"
-                    /> */}
-
+                    <Languages />
                 </details>
             </div>
         </div>

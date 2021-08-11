@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 
 import "./block.scss";
@@ -36,7 +36,7 @@ export function Job(props){
     );
 }
 
-
+/*
 export class Gallery extends React.Component{
     constructor(props){
         super(props);
@@ -164,9 +164,9 @@ export class Gallery extends React.Component{
         );
     }
 }
+*/
 
-
-
+/*
 export function Language(props){
     return (
         <div className="language">
@@ -183,7 +183,7 @@ export function Language(props){
         </div>
     );
 }
-
+*/
 
 
 /*************************/
@@ -232,4 +232,120 @@ export class StringToLogo extends React.Component{
         return this.props.techs.map((str, index) => this.stringToJSX(str, index));
     }
 
+}
+
+/******************************/
+
+const languages = {
+    0: {
+        heading: "English",
+        image: {src: "/pdf/TOEIC_965_certificate_redacted.pdf#toolbar=0",
+                alt: "TOEIC 965"},
+        text: "I have lived in a city bilingual in English and Chinese for over 20 years. The vast majority of my education is completed using English."
+    },
+    1: {
+        heading: "Japanese",
+        image: {src: "/pdf/JLPT_N1_redacted.pdf#toolbar=0",
+                alt: "Japanese Language Proficiency Test N1"},
+        text: "I am working in Japan and has passed the highest level of the most recognised Japanese language exam."
+    },
+    2: {
+        heading: "German",
+        image: {src: "/pdf/Goethe_Institut_B1_reading_certificate_redacted.pdf#toolbar=0",
+                alt: "Goethe Institut B1 Reading passed"},
+        text: "I can understand daily life German and can read German news and publications."
+    },
+    3: {
+        heading: "Chinese",
+        image: {src: "/pdf/HSK_level_6_certificate_redacted.pdf#toolbar=0",
+                alt: "Chinese Proficiency Test Level 6"},
+        text: "I am a native speaker of Chinese and two more dialects."
+    }
+}
+
+
+export class Languages extends React.Component{
+    constructor(props){
+        super(props);
+
+        this.state = {load: false};
+    }
+
+
+    render(){
+        return(
+            <>
+                <summary>Languages</summary>
+                <p>Due to privacy and security concern, personal information have been redacted.<br />
+                    I can send original versions to verify I am the owner if you contact me directly.
+                </p>
+                <div className="skill--languages">
+                    <Language
+                        id="0"
+                        load={this.state.load}
+                        setLoad={()=>this.setState({load: true})}
+                    />
+                    <Language
+                        id="1"
+                        load={this.state.load}
+                        setLoad={()=>this.setState({load: true})}
+                    />
+                    <Language
+                        id="2"
+                        load={this.state.load}
+                        setLoad={()=>this.setState({load: true})}
+                    />
+                    <Language
+                        id="3"
+                        load={this.state.load}
+                        setLoad={()=>this.setState({load: true})}
+                    />
+                </div>
+            </>
+        );
+    }
+}
+
+class Language extends React.Component{
+    constructor(props){
+        super(props);
+
+        this.getImages = this.getImages.bind(this);
+        this.getLoader = this.getLoader.bind(this);
+    }
+
+    getImages(language){
+
+        return (
+            <embed
+                className="language--pdf"
+                src={language.image.src}
+                type="application/pdf"
+                alt={language.image.alt}
+            />
+        );
+    }
+
+    getLoader(){
+        return (
+            <div>
+                <p className="language--preload">Click the button to load certificates,<br />it might take a few seconds.</p>
+                <button className="language--button" onClick={this.props.setLoad}>Show Certificate</button>
+            </div>
+        );
+    }
+
+
+    render(){
+        const id = this.props.id;
+        var language = languages[id];
+
+        return (
+            <div className="skill--language">
+                <h3>{language.heading}</h3>
+                {this.props.load ? this.getImages(language) : this.getLoader()}
+                <p className="language--description">{language.text}</p>
+            </div>
+        );
+    }
 }

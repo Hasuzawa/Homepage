@@ -355,6 +355,10 @@ $banner-height: 95px;
         &:nth-child(even){
             background-color: rgb(229, 255, 214);
         }
+
+        &:last-child{
+            flex: 1 0 auto;
+        }
     }
 
 
@@ -394,27 +398,8 @@ $banner-height: 95px;
     width: 100%;
 }
 
-.skill--languages{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
 
-    width: 100%;
-
-
-
-    .skill--language{
-        flex: 1 1 700px;
-
-        margin-bottom: 20px;
-
-        .language--pdf{
-            width: 90%;
-            height: 800px;
-        }
-
-    }
-}
+/*********************/
 
 
 .contact{
