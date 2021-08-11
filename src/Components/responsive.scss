@@ -11,7 +11,7 @@
         }
     }
 
-    /******************/
+    /********* job *********/
 
     #job--last_section{
         flex-direction: column-reverse;
@@ -26,6 +26,45 @@
         &> #job--photo{
             width: 95%;
 
+        }
+    }
+
+    /*****  footer  *****/
+
+    .footer{
+        height: 215px;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+        .footer--site{
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+        }
+
+        .footer--intro{
+            grid-column: 2 / span 1;
+            grid-row: 1 / span 1;
+        }
+
+        .footer--experience{
+            grid-column: 2 / span 1;
+            grid-row: 2 / span 1;
+        }
+
+        .footer--projects{
+            grid-column: 2 / span 1;
+            grid-row: 3 / span 1;
+        }
+
+        .footer--skill{
+            grid-column: 2 / span 1;
+            grid-row: 4 / span 1;
+        }
+
+        .footer--contact{
+            grid-column: 2 / span 1;
+            grid-row: 5 / span 1;
         }
     }
 }

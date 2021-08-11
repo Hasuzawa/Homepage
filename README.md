@@ -28,32 +28,36 @@ I am willing to move across city and country while prepare for the job beforehan
   <summary>languages, techs and tools</summary>
 
   ### Programming Languages
-  <p height="10px"></p>
-  <img src="./public/logos/C_logo.svg" alt="C" width="70" height="70" object-fit="scale-down">
-  <img src="./public/logos/C++_logo.svg" alt="C++" width="70" height="70" object-fit="scale-down">
-  <img src="./public/logos/Java_logo.svg" alt="Java" width="70" height="70" object-fit="scale-down">
-  <img src="./public/logos/Python_logo.svg" alt="Python" width="70" height="70" object-fit="scale-down">
-  <img src="./public/logos/Javascript_logo.svg" alt="Javascript" width="70 "height="70" object-fit="scale-down">
+  <img src="./public/logos/C_logo.svg" alt="C" width="70" height="70">
+  <img src="./public/logos/C++_logo.svg" alt="C++" width="70" height="70">
+  <img src="./public/logos/Java_logo.svg" alt="Java" width="70" height="70">
+  <img src="./public/logos/Python_logo.svg" alt="Python" width="70" height="70">
+  <img src="./public/logos/Javascript_logo.svg" alt="Javascript" width="70 "height="70"><br />
+  I am most proficient in Python, JavaScript and Java. But I know important concepts common in most programming languages
+  such as loop, object-oriented, array, list, set, map, pointer, namespace. I can migrate my knowledge to any programming language.
 
   ### Web Development
-  <p height="10px"></p>
-  <img src="./public/logos/HTML5_logo.svg" alt="HTML" width="70" height="70" object-fit="scale-down">
-  <img src="./public/logos/CSS3_logo.svg" alt="HTML" width="70" height="70" object-fit="scale-down">
+  <img src="./public/logos/HTML5_logo.svg" alt="HTML" width="70" height="70">
+  <img src="./public/logos/CSS3_logo.svg" alt="HTML" width="70" height="70">
   
-  <img src="./public/logos/React_logo.svg" alt="React" width="70" height="70" object-fit="scale-down">
-  <img src="./public/logos/Sass_logo.svg" alt="Sass" width="70" height="70" object-fit="scale-down">
-  <img src="./public/logos/Django_logo.svg" alt="Django" width="70" height="70" object-fit="scale-down">
+  <img src="./public/logos/React_logo.svg" alt="React" width="70" height="70">
+  <img src="./public/logos/Sass_logo.svg" alt="Sass" width="80" height="70">
+  <img src="./public/logos/Django_logo.svg" alt="Django" width="100" height="70"><br />
+  I have written my own homepage from zero.
 
   ### Technology
-  -  knowledge on networking, server, OSI model, IP address, MAC address.
+  -  knowledge on networking, server, OSI model, IP address, MAC address, DNS.
   -  basic knowledge on cyber security and vulnerability including cross-site scrpting, password cracking techniques, authentication, public key crytography.
 
+  ### Cloud Computing
+  <img src="./public/logos/AWS_CP_logo.svg" alt="AWS Cloud Practitioner" width="70" height="70"><br />
+  I know the services provided by AWS.
+
   ### Graphics
-  <p height="10px"></p>
-  <img src="./public/logos/Gimp_logo.svg" alt="Gimp" width="70" height="70" object-fit="scale-down">
-  <img src="./public/logos/Inkscape_logo.svg" alt="Inkscape" width="70" height="70" object-fit="scale-down">
-   <br />I primarily use Gimp for raster graphics and Inkscape for vector graphics.
-   <p height="50px"></p>
+  <img src="./public/logos/Gimp_logo.svg" alt="Gimp" width="70" height="70">
+  <img src="./public/logos/Inkscape_logo.svg" alt="Inkscape" width="70" height="70"><br />
+  I primarily use Gimp for raster graphics and Inkscape for vector graphics. Both are free and open-source.
+
   ### Languages
   -  English
      I am bilingual in English and Chinese.

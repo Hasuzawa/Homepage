@@ -437,12 +437,70 @@ $banner-height: 95px;
     margin: 0px;
     border: 0px;
     padding: 0px;
-    background-color: black;
 
-    display: flex;
-    justify-content: center;
+    height: 100px;
+
+    background-color: rgb(59, 59, 59);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    *{
+        color: white;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer--site{
+        grid-column: 5 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    .footer--intro{
+        grid-column: 3 / span 1;
+        font-size: 20px;
+
+        @extend %footer-switch-tab;
+    }
+    
+    .footer--experience{
+        grid-column: 4 / span 1;
+        font-size: 20px;
+
+        @extend %footer-switch-tab;
+    }
+
+    .footer--projects{
+        grid-column: 5 / span 1;
+        font-size: 20px;
+
+        @extend %footer-switch-tab;
+    }
+
+    .footer--skill{
+        grid-column: 6 / span 1;
+        font-size: 20px;
+
+        @extend %footer-switch-tab;
+    }
+
+    .footer--contact{
+        grid-column: 7 / span 1;
+        font-size: 20px;
+
+        @extend %footer-switch-tab;
+    }
 }
 
-.footer p{
-    color: white;
+%footer-switch-tab{
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover{
+        background-color: rgb(230, 230, 230);
+        color: black;
+    }
 }
