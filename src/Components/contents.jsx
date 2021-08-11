@@ -221,9 +221,8 @@ export function Skill(){
 export function Contact(){
     return (
         <div className="content contact">
-            <h3>I am happy you are interested.</h3>
+            <h3>Thank you for reading this.</h3>
             <p>
-                
                 I can be reached at <a href="https://github.com/Hasuzawa">GitHub</a>.<br />
                 This website is hosted on GitHub and you can see the source code there.<br />
                 Collaboration, enquiry, compensated offer are all welcomed.<br />

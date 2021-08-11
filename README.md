@@ -25,6 +25,7 @@ I am open to opportunities that requires relocation.
 
   I worked on a part of intranet system that monitor subnets.
   I implemented a frontend with HTML, CSS, Javascript in the frontend as a GUI for controlling connections.
+  
   In the backend, I programmed the logic using Java and SQL to fetch the relevant data for the frontend and to update the database in a HTTP request & response cycle.
 </details>
 
@@ -32,7 +33,9 @@ I am open to opportunities that requires relocation.
 <details>
    <summary open>Lifetime learning</summary>
    It is recommended to go to the page of each project for a more comprehensive summary.
+
    -  Website with React (this project)
+   -  Django project (in the future)
 
 </details>
 

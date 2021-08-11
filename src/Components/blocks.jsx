@@ -276,7 +276,7 @@ export class Languages extends React.Component{
     renderButton(){
         return (
             <button
-                className="languages--button" 
+                className={"languages--button" + (this.state.load ? " loaded" : "")}
                 onClick={()=>this.setState({load: !this.state.load})}
             >
                 {this.state.load ? "Hide Certificate" : "Show Certificate"}

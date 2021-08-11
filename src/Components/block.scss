@@ -218,6 +218,30 @@
         width: 130px;
         height: 50px;
         font-size: 18px;
+
+        border: 0;
+        padding: 0;
+
+        word-spacing: 20000px;  //force words to 2 lines
+        background-color: rgb(255, 225, 225);
+        color: rgb(0, 0, 0);
+        border: solid black 2px;
+        border-radius: 50px;
+
+        transition: 0.3s;
+
+        &:hover{
+            background-color: rgb(217, 222, 255);
+
+        }
+
+        &.loaded{
+            background-color: rgb(217, 222, 255);
+
+            &:hover{
+                background-color: rgb(255, 225, 225);
+            }
+        }
     }
 }
 
