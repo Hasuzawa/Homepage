@@ -197,14 +197,31 @@
             text-align: center;
         }
 
-        .language--button{
-            width: 130px;
-            height: 50px;
-            font-size: 18px;
-        }
+
 
     }
 }
+
+.languages-preface{
+    max-width: 400px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .languages-explanation{
+
+
+    }
+
+    .languages--button{
+        width: 130px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+
 
 /***********************/
 

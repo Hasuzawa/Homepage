@@ -269,6 +269,19 @@ export class Languages extends React.Component{
         super(props);
 
         this.state = {load: false};
+
+        this.renderButton = this.renderButton.bind(this);
+    }
+
+    renderButton(){
+        return (
+            <button
+                className="languages--button" 
+                onClick={()=>this.setState({load: !this.state.load})}
+            >
+                {this.state.load ? "Hide Certificate" : "Show Certificate"}
+            </button>
+        );
     }
 
 
@@ -276,29 +289,33 @@ export class Languages extends React.Component{
         return(
             <>
                 <summary>Languages</summary>
-                <p>Due to privacy and security concern, personal information have been redacted.<br />
-                    I can send original versions to verify I am the owner if you contact me directly.
-                </p>
+                <div className="languages-preface">
+                    <p className="languages-explanation">
+                        Due to privacy and security concern, personal information have been redacted.<br />
+                        I can send original versions to verify I am the owner if you contact me directly.
+                    </p>
+                    <hr width="100%"/>
+                    <p className="languages-explanation">
+                        Click the button to load certificates,<br />it might take a few seconds.
+                    </p>
+                    {this.renderButton()}
+                </div>
                 <div className="skill--languages">
                     <Language
                         id="0"
                         load={this.state.load}
-                        setLoad={()=>this.setState({load: true})}
                     />
                     <Language
                         id="1"
                         load={this.state.load}
-                        setLoad={()=>this.setState({load: true})}
                     />
                     <Language
                         id="2"
                         load={this.state.load}
-                        setLoad={()=>this.setState({load: true})}
                     />
                     <Language
                         id="3"
                         load={this.state.load}
-                        setLoad={()=>this.setState({load: true})}
                     />
                 </div>
             </>
@@ -311,27 +328,18 @@ class Language extends React.Component{
         super(props);
 
         this.getImages = this.getImages.bind(this);
-        this.getLoader = this.getLoader.bind(this);
     }
 
     getImages(language){
 
         return (
             <embed
+                id="language--image"
                 className="language--pdf"
                 src={language.image.src}
                 type="application/pdf"
                 alt={language.image.alt}
             />
-        );
-    }
-
-    getLoader(){
-        return (
-            <div>
-                <p className="language--preload">Click the button to load certificates,<br />it might take a few seconds.</p>
-                <button className="language--button" onClick={this.props.setLoad}>Show Certificate</button>
-            </div>
         );
     }
 
@@ -343,7 +351,7 @@ class Language extends React.Component{
         return (
             <div className="skill--language">
                 <h3>{language.heading}</h3>
-                {this.props.load ? this.getImages(language) : this.getLoader()}
+                {this.props.load ? this.getImages(language) : null}
                 <p className="language--description">{language.text}</p>
             </div>
         );

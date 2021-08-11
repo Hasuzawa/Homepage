@@ -47,7 +47,7 @@ export function Introduction (){
             </div>
             <div className="introduction--section2">    
                 <h1>About me</h1>
-                <p>I am a fullstack developer and system engineer currently working in Osaka, Japan.</p>
+                <p>I am a full stack developer and system engineer currently working in Osaka, Japan.</p>
                 <div className="domains">
                     <div className="domain">
                         <h2>Frontend</h2>
@@ -57,14 +57,14 @@ export function Introduction (){
                     </div>
                     <div className="domain">
                         <h2>Backend</h2>
-                        <p>I have implemented a backend to a intranet system using Java and SQL connected to a PostgreSQL database.
+                        <p>I have implemented a backend to an intranet system using Java and SQL connected to a PostgreSQL database.
                             I also know Python, Django and C++.
                         </p>
                     </div>
-                    <div className="domain">
+{/*                     <div className="domain">
                         <h2>System Engineer</h2>
-                        <p>content_here</p>
-                    </div>
+                        <p>I know basic Linux commands and networking. </p>
+                    </div> */}
                     <div className="domain">
                         <h2>Soft Skills</h2>
                         <p>I am a polygot in real life and can speak a total of 6 languages and dialects, including English, German, Japanese and Chinese.
@@ -74,10 +74,10 @@ export function Introduction (){
                 </div>
             </div>
             <div className="introduction--section3">
-                <h1>Interested?</h1>
+                <h1>Employment Status</h1>
                 <p>
-                    I am actively looking for job opportunities.
-                    I am willing to relocate to another city or country while preparing for the job beforehand if I receive a formal offer.
+                    I am employed but actively looking for job opportunities.<br />
+                    I am willing to relocate while preparing for the job beforehand if I receive a formal offer.
                 </p>
             </div>
         </div>
@@ -154,6 +154,10 @@ export function Skill(){
                     <div>
                         <StringToLogo techs={["C","C++","Java","JavaScript","Python"]}/>
                     </div>
+                    <p className="skill--paragraph">I am most proficient in JavaScript, Python and Java.<br />
+                        I am familiar with concepts that are common in programming language including looping, class and object-oriented approach, functional
+                        programming, refactoring and modular programming. I can migrate my knowledge and skill into other programming language.
+                    </p>
                 </details>
             </div>
             <div className="skills--section">
@@ -162,6 +166,12 @@ export function Skill(){
                     <div>
                         <StringToLogo techs={["HTML","CSS","React","Sass","Django"]}/>
                     </div>
+                    <p className="skill--paragraph">I have experience using many popular languages and frameworks.
+                        As a full stack developer, I have a full picture of the project. I can design the database and backend needed for the
+                        task and anticipate how user can interact in the frontend. Since I know what users are going to see and what data is
+                        necessary, I can keep the time needed to re-design the system to the minimum.
+                        I would consider specialise later in career.
+                    </p>
                 </details>
             </div>
             <div className="skills--section">
@@ -211,7 +221,7 @@ export function Skill(){
 export function Contact(){
     return (
         <div className="content contact">
-            <h3>I am happy you are reading this.</h3>
+            <h3>I am happy you are interested.</h3>
             <p>
                 
                 I can be reached at <a href="https://github.com/Hasuzawa">GitHub</a>.<br />
