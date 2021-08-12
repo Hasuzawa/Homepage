@@ -1,6 +1,5 @@
-import './App.css';
 import React from 'react';
-import {TabIndex} from "./components/enum.js";
+import {TabIndex} from "./components/Content.jsx";
 import Banner from "./components/Banner.jsx";
 import Header from "./components/Header.jsx";
 import Content from "./components/Content.jsx";
@@ -21,7 +20,7 @@ export default class App extends React.Component {
   }
 
   handleClick(e){
-    var tabClicked = parseInt(e.target.id); //id is a string when passed by event
+    var tabClicked = parseInt(e.target.tabIndex); //id is a string when passed by event
     this.setState({selectedTab: tabClicked});
   }
 

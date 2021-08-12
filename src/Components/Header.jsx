@@ -1,29 +1,35 @@
 import React from "react";
 
-import buttons from "./buttons.json";
-
-import "./responsive.scss";
 import "./style.scss";
+import "./responsive.scss";
+
+const buttons = Object.freeze({
+    0: "Intro",
+    1: "Experience",
+    2: "Projects",
+    3: "Skill",
+    4: "Contact"
+});
 
 export default class Header extends React.Component{
     constructor(props){
         super(props);
 
         this.renderButtons = this.renderButtons.bind(this);
-
     }
 
     
     renderButtons(){
         return (
-            Object.keys(buttons).map((button, i) =>
+            Object.keys(buttons).map((buttonID, i) =>
                 <button
-                    key={buttons[button].id}
-                    id={buttons[button].id}
+                    key={i}
+                    id={"headerCell" + buttonID}
+                    tabIndex={buttonID}
                     onClick={this.props.handleClick}
-                    className={"switch_tab " + (this.props.selectedTab === buttons[button].id ? "selected" : "")}
+                    className={"switch_tab" + (this.props.selectedTab === parseInt(buttonID) ? " selected" : "")}
                 >
-                    {buttons[button].buttonName}
+                    {buttons[buttonID]}
                 </button>
             )
         );
