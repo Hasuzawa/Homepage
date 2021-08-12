@@ -9,18 +9,21 @@ Alternatively, utilise the [official google plugin](https://chrome.google.com/we
 The summary of the website is given below.
 
 ## Personal Background
+<details open>
+  <summary>unique skillset</summary>
 I am a full stack developer with science background. I can programme in a variety of languages and am familiar with many popular frameworks.
 
 I value efficiency, time and self-improvement. I am still in the stage of learning but has already
 acquired sufficient skills to contribute.
 
-I am also a polygot and can speak 6 langauges and dialects in real life. The ability to communicate with people around the world is invaluable in an increasingly globalised world.
+I am also a polygot and can speak 4 langauges in real life. The ability to communicate with people around the world is invaluable in an increasingly globalised world.
 
 I am open to opportunities that requires relocation.
+</details>
 
 ## Work Experience
 <details>
-  <summary open>full-stack developer and system engineer</summary>
+  <summary open>Full stack developer and system engineer</summary>
   Currently I am working as a full stack developer in Osaka, Japan.
 
   I worked on a part of intranet system that monitor subnets.
@@ -34,14 +37,16 @@ I am open to opportunities that requires relocation.
    <summary open>Lifetime learning</summary>
    It is recommended to go to the page of each project for a more comprehensive summary.
 
-   -  Website with React (this project)
-   -  Django project (in the future)
+   -  Website with React (this project)<br />
+      A simple website written using React framework with extensive usage of Sass.
+      
+   -  Django project (planned)
 
 </details>
 
 ## Skill
 <details open>
-  <summary>languages, techs and tools</summary>
+  <summary>Languages, techs and tools</summary>
 
   ### Programming Languages
   <img src="./public/logos/C_logo.svg" alt="C" width="70" height="70">
@@ -67,9 +72,9 @@ I am open to opportunities that requires relocation.
   -  basic knowledge on cyber security and vulnerability including cross-site scrpting, password cracking techniques, authentication, public key crytography.
 
   ### Cloud Computing
-  <img src="./public/logos/AWS_CP_logo.svg" alt="AWS Cloud Practitioner" width="70" height="70">
+  <img src="./public/logos/AWS_Cloud_Practitioner_logo.png" alt="AWS Cloud Practitioner" width="100" height="100">
 
-  I know the services provided by AWS.
+  I know the services provided by AWS. I am learning to host my own project on AWS.
 
   ### Graphics
   <img src="./public/logos/Gimp_logo.svg" alt="Gimp" width="80">
@@ -79,13 +84,13 @@ I am open to opportunities that requires relocation.
 
   ### Languages
   -  English<br />
-     I am bilingual in English and Chinese.
+     I am bilingual in English and Chinese. I completed most of my education in English.
   -  Japanese<br />
      I live and work in Japan right now and has passed the highest level of the most recognised Japanese exam JLPT.
   -  German<br />
      I can understand daily life German and can read German news and publications.
   -  Chinese<br />
-     In addition to Mandarin, I can speak two more dialects.
+     I am a native speaker of Chinese.
 </details>
 
 ## Contact

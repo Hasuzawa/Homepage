@@ -2,7 +2,6 @@ import React from "react";
 import {Job} from "./blocks.jsx";
 import "./style.scss";
 
-import {Gallery, Language} from "./blocks.jsx";
 import { language_English_photos, language_Japanese_photos, language_German_photos, language_Chinese_photos } from "./photos.js";
 import { StringToLogo, Languages } from "./blocks.jsx";
 

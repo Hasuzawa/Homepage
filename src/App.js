@@ -10,6 +10,7 @@ import Footer from "./components/Footer.jsx";
 export default class App extends React.Component {
   constructor(props){
     super(props);
+
     this.state = {
       selectedTab: TabIndex.introduction,
       bannerFolded: false
@@ -21,16 +22,12 @@ export default class App extends React.Component {
 
   handleClick(e){
     var tabClicked = parseInt(e.target.id); //id is a string when passed by event
-    console.log("clicked");
-    console.log(tabClicked);
     this.setState({selectedTab: tabClicked});
   }
 
   handleFold(e){
-    console.log("before change", this.state.bannerFolded);
     var newFoldStatus = this.state.bannerFolded ? false : true;
     this.setState({bannerFolded: newFoldStatus});
-    console.log("after change", newFoldStatus);
   }
 
   render(){

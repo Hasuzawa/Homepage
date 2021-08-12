@@ -35,9 +35,9 @@ export default class Header extends React.Component{
         <nav className="header">
             {/* should not have word here, only tabs should have word at the header bar*/}
             <span>Hasuzawa@Home</span>
-            <div className="filler"></div>
+            <div className="filler" />
             {this.renderButtons()}
-            <div className="filler"></div>
+            <div className="filler" />
             <DropdownMenu
                 handleClick={this.props.handleClick}
                 selectedTab={this.props.selectedTab}
@@ -51,28 +51,16 @@ export default class Header extends React.Component{
 }
 
 
-
-
-class DropdownMenu extends React.Component{
-    constructor(props){
-        super(props);
-    }
-
-    render(){
-        return (
-            <div className="dropdown_menu">
-                <button className="dropdown_menu--icon">≡</button>
-                <div className="dropdown_menu--content">
-                    {this.props.buttons}
-                </div>
+const DropdownMenu = (props) => (
+        <div className="dropdown_menu">
+            <button className="dropdown_menu--icon">≡</button>
+            <div className="dropdown_menu--content">
+                {props.buttons}
             </div>
-        );
-    }
-}
+        </div>
+);
 
 
-function ToTheTopButton(){
-    return (
-        <button className="toTheTopButton" onClick={()=>window.location.href="#root"}/>
-    );
-}
+const ToTheTopButton = () => (
+    <button className="toTheTopButton" onClick={()=>window.location.href="#root"}/>
+);

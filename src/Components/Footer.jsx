@@ -12,6 +12,9 @@ export default function Footer(props){
             <span id="3" className="footer--skill" onClick={props.handleClick}>Skill</span>
             <span id="4" className="footer--contact" onClick={props.handleClick}>Contact</span>
 
+            <a href="https://github.com/Hasuzawa/homepage" className="footer--link">
+                <img id="5" className="footer--GitHub" src="logos/C_logo.svg" alt="repository of webpage"/>
+            </a>
             {/*add some github icon link and contact info */}
         </div>
     );
