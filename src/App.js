@@ -20,7 +20,7 @@ export default class App extends React.Component {
   }
 
   handleClick(e){
-    var tabClicked = parseInt(e.target.tabIndex); //id is a string when passed by event
+    var tabClicked = parseInt(e.target.id.slice(-1)); //id is a string when passed by event
     this.setState({selectedTab: tabClicked});
   }
 

@@ -457,59 +457,65 @@ $banner-height: 95px;
         justify-content: center;
     }
 
+    .footer--button{
+        margin: 0;
+        border: 0;
+        padding: 0;
+
+        background-color: transparent;
+    }
+
     .footer--site{
         grid-column: 5 / span 1;
         grid-row: 2 / span 1;
     }
 
-    .footer--intro{
-        grid-column: 3 / span 1;
+    [id^="footerCell"]{
         font-size: 20px;
-
         @extend %footer-switch-tab;
+    }
+
+    #footerCell0{
+        grid-column: 3 / span 1;
+    }
+
+    #footerCell1{
+        grid-column: 4 / span 1;
     }
     
-    .footer--experience{
-        grid-column: 4 / span 1;
-        font-size: 20px;
-
-        @extend %footer-switch-tab;
-    }
-
-    .footer--projects{
+    #footerCell2{
         grid-column: 5 / span 1;
-        font-size: 20px;
-
-        @extend %footer-switch-tab;
     }
 
-    .footer--skill{
+    #footerCell3{
         grid-column: 6 / span 1;
-        font-size: 20px;
-
-        @extend %footer-switch-tab;
     }
 
-    .footer--contact{
+    #footerCell4{
         grid-column: 7 / span 1;
-        font-size: 20px;
-
-        @extend %footer-switch-tab;
     }
 }
 
-.footer--link{
+#footer--link{
     grid-column: 7 / span 1;
     grid-row: 2 / span 1;
+    transition: 0.3s;
 
-}
+    .footer--GitHub{
+        width: 40px;
+        height: 40px;
+        object-fit: scale-down;
+        filter: invert(1);
+    
+    }
 
-.footer--GitHub{
-    width: 40px;
-    height: 40px;
-    object-fit: scale-down;
-    filter: invert(1);
+    &:hover{
+        background-color: rgb(230, 230, 230);
 
+        .footer--GitHub{
+            filter: none;
+        }
+    }
 }
 
 
