@@ -170,3 +170,27 @@ function ToTheTopButton(){
         <button className="toTheTopButton" onClick={()=>window.location.href="#root"}/>
     );
 }
+
+//not used
+var buttons = {
+    "introduction": {
+        "id": 0,
+        "buttonName": "Intro"
+    },
+    "workExperience": {
+        "id": 1,
+        "buttonName": "Experience"
+    },
+    "projects": {
+        "id": 2,
+        "buttonName": "Projects"
+    },
+    "expertise": {
+        "id": 3,
+        "buttonName": "Skill"
+    },
+    "contact": {
+        "id": 4,
+        "buttonName": "Contact"
+    }
+}

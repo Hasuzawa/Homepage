@@ -46,7 +46,7 @@ export function Introduction (){
             </div>
             <div className="introduction--section2">    
                 <h1>About me</h1>
-                <p>I am a full stack developer and system engineer currently working in Osaka, Japan.</p>
+                <span>I am a full stack developer and system engineer currently working in Osaka, Japan.</span>
                 <div className="domains">
                     <div className="domain">
                         <h2>Frontend</h2>
@@ -87,7 +87,6 @@ export function Introduction (){
 export function WorkExperience(){
     return (
         <div className="content work-experience">
-            {/* you would likely further refactor this into json in the future*/}
             <Job
                 jobTitle="Programmer -> System&nbsp;Engineer"
                 startDate="15&nbsp;March&nbsp;2021"
@@ -100,10 +99,20 @@ export function WorkExperience(){
                     I used Java, SQL to handle downloading, returning enquired information or updating the database." */
                 description={
                 <>
-                    <h3>role</h3>
-                    <p>text goes here</p>
+                    <h3>responsilities</h3>
+                    <ul>
+                        <li>design and implement frontend</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                     <h3>accomplishment</h3>
-                    <p>I designed</p>
+                    <p>I completed a part of a intranet system. I designed the frontend with HTTP, CSS and JavaScript. The
+                        user interface include calendar, sortable table, input field to enter query data to send to the
+                        backend by HTTP request.
+                        In the backend, I used Java to receive the request message. Depending on the request, it might
+                        require data to be fetched from the database by SQL and formatted as a CSV and sent back to the frontend.
+                        
+                    </p>
                 </>}
             />
         </div>
