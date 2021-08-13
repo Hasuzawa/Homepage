@@ -34,7 +34,7 @@ export default class App extends React.Component {
     return (
       <div className = "App">
         <Banner bannerFolded={this.state.bannerFolded}/>
-        <Header handleClick={this.handleClick} selectedTab={this.state.selectedTab} handleFold={this.handleFold} bannerFolded={this.state.bannerFolded}/>
+        <Header handleClick={this.handleClick} handleFold={this.handleFold} {...this.state}/>
         <Content selectedTab={this.state.selectedTab}/>
         <Footer handleClick={this.handleClick}/>
       </div>

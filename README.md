@@ -22,8 +22,8 @@ I am open to opportunities that requires relocation.
 </details>
 
 ## Work Experience
-<details>
-  <summary open>Full stack developer and system engineer</summary>
+<details open>
+  <summary>Full stack developer and system engineer</summary>
   Currently I am working as a full stack developer in Osaka, Japan.
 
   I worked on a part of intranet system that monitor subnets.
@@ -33,8 +33,8 @@ I am open to opportunities that requires relocation.
 </details>
 
 ## Project
-<details>
-   <summary open>Lifetime learning</summary>
+<details open>
+   <summary>Lifetime learning</summary>
    It is recommended to go to the page of each project for a more comprehensive summary.
 
    -  Website with React (this project)<br />
