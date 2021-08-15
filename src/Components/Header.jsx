@@ -27,6 +27,7 @@ export default class Header extends React.Component{
                     id={"headerCell" + buttonID}
                     onClick={this.props.handleClick}
                     className={"switch_tab" + (this.props.selectedTab === parseInt(buttonID) ? " selected" : "")}
+                    testId={"headerButton" + i}
                 >
                     {buttons[buttonID]}
                 </button>
@@ -49,7 +50,13 @@ export default class Header extends React.Component{
                 buttons={this.renderButtons()}
             />
             <ToTheTopButton />
-            <button className="fold_button" onClick={this.props.handleFold}>{this.props.bannerFolded ? "▼" : "▲"}</button>
+            <button
+                className="fold_button"
+                onClick={this.props.handleFold}
+                testId="fold_button"
+            >
+                {this.props.bannerFolded ? "▼" : "▲"}
+            </button>
         </nav>
         );
     }
