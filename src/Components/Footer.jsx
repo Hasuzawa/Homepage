@@ -13,7 +13,7 @@ export default function Footer(props){
             <span id={"footerCell" + TabIndex.skill} className="footer--skill" onClick={props.handleClick} tabIndex="0">Skill</span>
             <span id={"footerCell" + TabIndex.contact} className="footer--contact" onClick={props.handleClick} tabIndex="0">Contact</span>
 
-            <a href="https://github.com/Hasuzawa/homepage" target="_blank" id="footer--link">
+            <a href="https://github.com/Hasuzawa/homepage" target="_blank" rel="noreferrer noopener" id="footer--link">
                 <img className="footer--GitHub" src="logos/GitHub_logo.png" alt="repository of webpage"/>
             </a>
         </div>
