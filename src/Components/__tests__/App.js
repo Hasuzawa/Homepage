@@ -3,7 +3,7 @@ import React from "react";
 //import { render } from "@testing-library/react";
 import App from "../../App.js";
 
-import TestRenderer from "react-test-renderer";
+import TestRenderer, { act } from "react-test-renderer";
 import { Simulate } from "react-dom/test-utils";
 
 describe("App", () => {
@@ -21,17 +21,28 @@ describe("App", () => {
         const buttons = testInstance.findAllByProps({testId: "headerButton" + i});
         const button = buttons[0];
 /*         console.log(button.props);
-        Simulate.click(button);
+
+        
         console.log(appInstance.state); */
 
         test(`link button ${i} text is ${buttonText[i]}`, () => {
             expect(buttons[0].children).toStrictEqual([buttonText[i]]);
         });
 
-/*         test(`selectedTab changes to ${i} when ${buttonText[i]} is clicked`, () => {
+
+        act(() => {
+            Simulate.click(button);
+        })
+
+        expect(appInstance.props.onClick).toHaveBeenCalled();
+    
+
+        //I probably have to use act() to test component callback function
+
+        test(`selectedTab changes to ${i} when ${buttonText[i]} is clicked`, () => {
             
             expect(appInstance.state.selectedTab).toBe(i);
-        }); */
+        }); 
     }
 /*     let button = testInstance.findAllByProps({testId: "headerButton3"})[0];
     Simulate.click(button); */
