@@ -24,7 +24,11 @@ export function Job(props){
                 </div>
                 <div className="job--boxed--fourth_line" id="job--last_section">
                     <div className="job--description" id="job--description">{props.description}</div>
-                    <img className="job--photo" id="job--photo" src="/logos/C_logo.svg" alt="C"></img>
+                    <div className="job--photo_area" id="job--photo_area">
+                        <img className="job--photo" id="job--photo" src="/images/near_Osaka_Castle.png" alt="C"></img>
+                        <span className="photo--caption">The building where I work at is right beside Osaka Castle.</span>
+                    </div>
+                    
                     {/* image gallery */}
                 </div>
             </div>
@@ -55,6 +59,8 @@ export class StringToLogo extends React.Component{
         "Inkscape": <img className="skill_logo" src="/logos/Inkscape_logo.svg" alt="Inkscape"/>,
 
         "GraphQL": <img className="skill_logo" src="/logos/GraphQL_logo.svg" alt="GraphQL"/>,
+        "Graphene-django":<img className="skill_logo" src="/logos/Graphene-django_logo.svg" alt="Graphene-django"/>,
+        "Apollo":<img className="skill_logo" src="/logos/Apollo_logo.svg" alt="Apollo"/>,
 
         "Apache": <img className="skill_logo" src="/logos/Apache_logo.png" alt="Apache"/>,
 

@@ -13,6 +13,9 @@ import { StringToLogo, Languages } from "./blocks.jsx";
 export function Introduction (){
     return (
         <div className="content introduction">
+            <p className="notification">This website will soon be deprecated. After I finish some other projects, I will create a new website
+                with Next.js with better presentation.
+            </p>
             <div className="introduction--section0">
                 <h1>Hasuzawa@Home</h1>
                 <p>
@@ -94,16 +97,13 @@ export function WorkExperience(){
                 company="NetValue Co., Ltd. (Japan)"
                 company_url="https://www.netvalue-io.com/"
                 techs={["HTML","CSS","JavaScript","Java","Apache", "PostgreSQL"]}
-                /* description="I started as a programmer and later full stack developer. I implemented both frontend and backend of a intranet sytem.
-                    In the forntend, I used HTML, JavaScript, CSS to display data and send information to the backend by API. In the backend,
-                    I used Java, SQL to handle downloading, returning enquired information or updating the database." */
                 description={
                 <>
                     <h3>responsilities</h3>
                     <ul>
-                        <li>design and implement frontend</li>
-                        <li></li>
-                        <li></li>
+                        <li>design and implement frontend, using HTML, CSS, JavaScript</li>
+                        <li>implement backend logic, from HTTP to database operations</li>
+                        <li>unit test frontend and backend</li>
                     </ul>
                     <h3>accomplishment</h3>
                     <p>I completed a part of a intranet system. I designed the frontend with HTTP, CSS and JavaScript. The
@@ -111,6 +111,14 @@ export function WorkExperience(){
                         backend by HTTP request.
                         In the backend, I used Java to receive the request message. Depending on the request, it might
                         require data to be fetched from the database by SQL and formatted as a CSV and sent back to the frontend.
+                        <hr />
+                        I also participated in implementing part of a reservation and management system for a local hospital.
+                        The project involves PostgreSQL database and Java in the backend.
+
+                        <hr />
+                        I have work experience using HTML, CSS, JavaScript, Java, SQL, PostgreSQL. In my free time, I learned
+                        React, Python, C++, Sass, Bootstrap, Django, TypeScript, GraphQL, Git, Apollo, AWS
+                        and used them in my project.
                         
                     </p>
                 </>}

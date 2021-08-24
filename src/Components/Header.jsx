@@ -27,7 +27,7 @@ export default class Header extends React.Component{
                     id={"headerCell" + buttonID}
                     onClick={this.props.handleClick}
                     className={"switch_tab" + (this.props.selectedTab === parseInt(buttonID) ? " selected" : "")}
-                    testId={"headerButton" + i}
+                    testid={"headerButton" + i}
                 >
                     {buttons[buttonID]}
                 </button>

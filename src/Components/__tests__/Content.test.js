@@ -1,7 +1,6 @@
 import React from "react";
 import TestRender from "react-test-renderer";
 import ReactTestUtils from "react-dom/test-utils";
-//import { isElementOfType } from ReactTestUtils;
 
 import { render,  } from "react-test-renderer";
 

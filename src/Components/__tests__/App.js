@@ -47,7 +47,7 @@ describe("App", () => {
 /*     let button = testInstance.findAllByProps({testId: "headerButton3"})[0];
     Simulate.click(button); */
 
-    const foldButton = testInstance.findByProps({testId: "fold_button"});
+    const foldButton = testInstance.findByProps({testid: "fold_button"});
 
     test("fold button is on after click", () => {
         foldButton.props.onClick();

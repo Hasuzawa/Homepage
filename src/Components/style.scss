@@ -243,6 +243,8 @@ $banner-height: 95px;
 
 
 
+
+
 .introduction{
     width: 100%;
 
@@ -256,6 +258,14 @@ $banner-height: 95px;
 
     &> div:nth-child(even){
         background-color: rgb(228, 240, 255);
+    }
+
+
+    .notification{
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        background-color: rgb(255, 190, 190);
     }
 
     .introduction--section1{

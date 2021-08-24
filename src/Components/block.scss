@@ -59,7 +59,7 @@
 
             .job--description{
                 //flex: 0.4 0.6 800px;
-                width: 66%;
+                width: 60%;
 
                 margin: 10px;
                 border: 1px solid black;
@@ -78,9 +78,16 @@
                 
             }
 
+            .job--photo_area{
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+
+                
+            }
+
             .job--photo{
                 //flex: 0.6 0.4 400px;
-                width: 34%;
                 max-width: 500px;
                 max-height: 800px;
 
