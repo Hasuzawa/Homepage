@@ -1,5 +1,5 @@
 # Homepage of Hasuzawa
-This is my [homepage](). This is not a collaborative project but I welcome ideas and suggestions.
+This is my [homepage](https://hasuzawa.github.io/homepage/). This is not a collaborative project but I welcome ideas and suggestions.
 
 The website is a single page application written with React, Sass and standard HTML,CSS,JS. This website will be deprecated within a few months and replaced by a new website written in Next.js.
 
