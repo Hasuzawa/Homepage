@@ -153,6 +153,9 @@ export function Projects(){
                     further obfuscate an already complex HTML tree. This defeats the purpose of separating the web content
                     and how it is presented. But I will give it a try in the future.<br />
                     The website is hosted on GitHub and the source code is available at <a href="https://github.com/Hasuzawa/homepage">GitHub</a>.
+                    <hr />
+                    I used the [colour theory of supplementary colour](https://en.wikipedia.org/wiki/Complementary_colors) in designing the background colour.
+                    I have always felt a pure white background is too bright. A tinture of colour softens it a lot.
                     </p>
                 </div>
             </div>
@@ -168,7 +171,7 @@ export function Skill(){
                 <details open className="skill">
                     <summary>Programming Languages</summary>
                     <div>
-                        <StringToLogo techs={["C","C++","Java","JavaScript","Python"]}/>
+                        <StringToLogo techs={["C", "C++", "Java", "JavaScript", "Python", "TypeScript"]}/>
                     </div>
                     <p className="skill--paragraph">I am most proficient in JavaScript, Python and Java.<br />
                         I am familiar with concepts that are common in programming language including looping, class and object-oriented approach, functional
@@ -180,7 +183,7 @@ export function Skill(){
                 <details open className="skill">
                     <summary>Web Development</summary>
                     <div>
-                        <StringToLogo techs={["HTML","CSS","React","Sass","Django"]}/>
+                        <StringToLogo techs={["HTML", "CSS", "React", "Sass", "Django", "GraphQL", "Graphene-django"]}/>
                     </div>
                     <p className="skill--paragraph">I have experience using many popular languages and frameworks.
                         As a full stack developer, I have a full picture of the project. I can design the database and backend needed for the
@@ -197,9 +200,8 @@ export function Skill(){
                         <div className="skill--technology">
                             <h3>Networking</h3>
                             <p>I am a nationally qualified information engineer in Japan.
-                                I have knowledge on HTTP(S), IPv4 and IPv6 address, subnet, OSI model, server, DHCP,
-                                Address Resolution Protocol,
-                                memory types, port number, SSH.
+                                I have knowledge on HTTP(S), IPv4 {"\u0026"} IPv6 address, subnet, OSI model, server, DHCP,
+                                Address Resolution Protocol, port number, SSH. 
                             </p>
                         </div>
 {/*                         <div className="skill--technology">
@@ -238,9 +240,12 @@ export function Contact(){
     return (
         <div className="content contact">
             <h3>Thank you for reading this.</h3>
+            <address>
+                I can be reached by email: <a href="mailto:hasuzawa.yuichi.international@gmail.com">hasuzawa.yuichi.international@gmail.com</a>
+            </address>
+            <p>It would likely be in your interest to visit <a href="https://github.com/Hasuzawa">my GitHub</a> first to have an overview of my expertise.</p>
             <p>
-                I can be reached at <a href="https://github.com/Hasuzawa">GitHub</a>.<br />
-                This website is hosted on GitHub and you can see the source code there.<br />
+                This website is hosted on GitHub and you can see the <a href="https://github.com/Hasuzawa/homepage">source code</a> there.<br />
                 Collaboration, enquiry, compensated offer are all welcomed.<br />
             </p>
         </div>

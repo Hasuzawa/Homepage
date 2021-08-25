@@ -42,7 +42,9 @@ export default class Header extends React.Component{
             {/* should not have word here, only tabs should have word at the header bar*/}
             <span>Hasuzawa@Home</span>
             <div className="filler" />
-            {this.renderButtons()}
+            <div className="tab_menu">
+                {this.renderButtons()}
+            </div>
             <div className="filler" />
             <DropdownMenu
                 handleClick={this.props.handleClick}
