@@ -1,102 +1,95 @@
 .job{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
     width: 100%;
-    background-color: rgb(240, 255, 254);
+    max-width: 1500px;
+    flex: 0 1 auto;
 
+    margin: 20px;
+    border: 2px solid black;
 
-    &> .job--boxed{
-        flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+    overflow-x: auto;
+
+    .job--boxed--first_line{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
 
-        max-width: 1500px;
-        margin: 20px;
-        border: 2px solid black;
-
-
-        .job--boxed--first_line{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-            .job--date{
-                font-size: 20px;
-            }
-
+        .job--date{
+            font-size: 20px;
         }
 
+    }
 
-        .job--boxed--second_line{
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
 
-            .job--company{
-                font-size: 20px;
-            }
+    .job--boxed--second_line{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
 
+        .job--company{
+            font-size: 20px;
         }
 
+    }
 
-        .job--boxed--third_line{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: flex-start;
-            align-items: center;
 
+    .job--boxed--third_line{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+
+    .job--boxed--fourth_line{
+        display: flex;
+        flex-direction: row;
+        //justify-content: space-between;
+
+        .job--description{
+            //flex: 0.4 0.6 800px;
+            width: 60%;
+
+            margin: 10px;
+            border: 1px solid black;
+            padding: 6px;
+
+            //background-color: white;
+            overflow-y: auto;
+            
+            *{
+                text-align: start;
+            }
+
+            h3{
+                margin: 10px 0;
+            }
+            
         }
 
-
-        .job--boxed--fourth_line{
+        .job--photo_area{
             display: flex;
-            flex-direction: row;
-            //justify-content: space-between;
+            flex-direction: column;
+            width: 40%;
 
-            .job--description{
-                //flex: 0.4 0.6 800px;
-                width: 60%;
+            
+        }
 
-                margin: 10px;
-                border: 1px solid black;
-                padding: 6px;
+        .job--photo{
+            //flex: 0.6 0.4 400px;
+            max-width: 500px;
+            max-height: 800px;
 
-                //background-color: white;
-                overflow-y: auto;
-                
-                *{
-                    text-align: start;
-                }
+            margin: 20px;
 
-                h3{
-                    margin: 10px 0;
-                }
-                
-            }
-
-            .job--photo_area{
-                display: flex;
-                flex-direction: column;
-                width: 40%;
-
-                
-            }
-
-            .job--photo{
-                //flex: 0.6 0.4 400px;
-                max-width: 500px;
-                max-height: 800px;
-
-                margin: 20px;
-
-                object-fit: scale-down;
-            }
+            object-fit: scale-down;
         }
     }
+    
 
     .job--job_title, .job--date, .job--company, .job--description, .job--boxed--third_line > span{
         margin: 6px;

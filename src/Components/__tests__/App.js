@@ -18,7 +18,7 @@ describe("App", () => {
 
     for (let i = 0; i < 5; i++){
 
-        const buttons = testInstance.findAllByProps({testId: "headerButton" + i});
+        const buttons = testInstance.findAllByProps({testid: "headerButton" + i});
         const button = buttons[0];
 /*         console.log(button.props);
 

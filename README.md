@@ -1,7 +1,7 @@
 # Homepage of Hasuzawa
 This is my [homepage](). This is not a collaborative project but I welcome ideas and suggestions.
 
-The website is a single page application written with React, Sass and standard HTML,CSS,JS. This website will be deprecated within a few months.
+The website is a single page application written with React, Sass and standard HTML,CSS,JS. This website will be deprecated within a few months and replaced by a new website written in Next.js.
 
 For a structural overview of the website, please visit [the Wiki of this project](https://github.com/Hasuzawa/homepage/wiki/Overview).
 Alternatively, utilise the [official google plugin](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)

@@ -2,12 +2,9 @@ import React from "react";
 import {Job} from "./blocks.jsx";
 import "./style.scss";
 
-import { language_English_photos, language_Japanese_photos, language_German_photos, language_Chinese_photos } from "./photos.js";
 import { StringToLogo, Languages } from "./blocks.jsx";
 
-//import logo from "/logos/C++_logo.svg";
-
-//import "./responsive.scss";
+import "./responsive.scss";
 
 
 export function Introduction (){
@@ -106,20 +103,23 @@ export function WorkExperience(){
                         <li>unit test frontend and backend</li>
                     </ul>
                     <h3>accomplishment</h3>
-                    <p>I completed a part of a intranet system. I designed the frontend with HTTP, CSS and JavaScript. The
+                    <p>
+                        I completed a part of a intranet system. I designed the frontend with HTTP, CSS and JavaScript. The
                         user interface include calendar, sortable table, input field to enter query data to send to the
                         backend by HTTP request.
                         In the backend, I used Java to receive the request message. Depending on the request, it might
                         require data to be fetched from the database by SQL and formatted as a CSV and sent back to the frontend.
-                        <hr />
+                    </p>
+                    <hr />
+                    <p>
                         I also participated in implementing part of a reservation and management system for a local hospital.
                         The project involves PostgreSQL database and Java in the backend.
-
-                        <hr />
+                    </p>
+                    <hr />
+                    <p>
                         I have work experience using HTML, CSS, JavaScript, Java, SQL, PostgreSQL. In my free time, I learned
                         React, Python, C++, Sass, Bootstrap, Django, TypeScript, GraphQL, Git, Apollo, AWS
                         and used them in my project.
-                        
                     </p>
                 </>}
             />
@@ -153,8 +153,10 @@ export function Projects(){
                     further obfuscate an already complex HTML tree. This defeats the purpose of separating the web content
                     and how it is presented. But I will give it a try in the future.<br />
                     The website is hosted on GitHub and the source code is available at <a href="https://github.com/Hasuzawa/homepage">GitHub</a>.
+                    </p>
                     <hr />
-                    I used the [colour theory of supplementary colour](https://en.wikipedia.org/wiki/Complementary_colors) in designing the background colour.
+                    <p>
+                    I used the <a href="https://en.wikipedia.org/wiki/Complementary_colors">colour theory of supplementary colour</a> in designing the background colour.
                     I have always felt a pure white background is too bright. A tinture of colour softens it a lot.
                     </p>
                 </div>

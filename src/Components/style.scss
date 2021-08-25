@@ -240,7 +240,6 @@ $banner-height: 95px;
 
 /************************/
 
-/* for non-white background, this produces a flashy effect that could be distracting */
 .content{
     @extend %flex-column-center;
 
@@ -248,7 +247,8 @@ $banner-height: 95px;
     text-align: center;
     background-color: white;
     animation: fade-in-effect 0.3s;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 
@@ -332,7 +332,12 @@ $banner-height: 95px;
 
 
 .work-experience{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow-x: hidden;
+    background-color: rgb(255, 252, 238);
 }
 
 
