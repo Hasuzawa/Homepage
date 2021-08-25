@@ -24,7 +24,7 @@ export function Job(props){
                 <div className="job--boxed--fourth_line" id="job--last_section">
                     <div className="job--description" id="job--description">{props.description}</div>
                     <div className="job--photo_area" id="job--photo_area">
-                        <img className="job--photo" id="job--photo" src="/images/near_Osaka_Castle.png" alt="C"></img>
+                        <img className="job--photo" id="job--photo" src="./images/near_Osaka_Castle.png" alt="near Osaka Castle"></img>
                         <span className="photo--caption">The building where I work at is right beside Osaka Castle.</span>
                     </div>
                     
@@ -35,34 +35,41 @@ export function Job(props){
 }
 
 /*************************/
+const publishMode = "gh-pages";
+var baseURL = ""
+if (publishMode === "gh-pages"){
+    baseURL = "./";
+} else {
+    baseURL = "";
+}
 
 export class StringToLogo extends React.Component{
 
     static toLogo = {
-        "C": <img className="skill_logo" src="/logos/C_logo.svg" alt="C"/>,
-        "C++": <img className="skill_logo" src="/logos/C++_logo.svg" alt="C++"/>,
-        "Java": <img className="skill_logo" src="/logos/Java_logo.svg" alt="Java"/>,
-        "JavaScript": <img className="skill_logo" src="/logos/Javascript_logo.svg" alt="JavaScript"/>,
-        "Python": <img className="skill_logo" src="/logos/Python_logo.svg" alt="Python"/>,
-        "TypeScript": <img className="skill_logo" src="/logos/Typescript_logo.svg" alt="TypeScript"/>,
+        "C": <img className="skill_logo" src={baseURL + "logos/C_logo.svg"} alt="C"/>,
+        "C++": <img className="skill_logo" src={baseURL + "logos/C++_logo.svg"} alt="C++"/>,
+        "Java": <img className="skill_logo" src={baseURL + "logos/Java_logo.svg"} alt="Java"/>,
+        "JavaScript": <img className="skill_logo" src={baseURL + "logos/Javascript_logo.svg"} alt="JavaScript"/>,
+        "Python": <img className="skill_logo" src={baseURL + "logos/Python_logo.svg"} alt="Python"/>,
+        "TypeScript": <img className="skill_logo" src={baseURL + "logos/Typescript_logo.svg"} alt="TypeScript"/>,
 
 
-        "HTML": <img className="skill_logo" src="/logos/HTML5_logo.svg" alt="HTML"/>,
-        "CSS": <img className="skill_logo" src="/logos/CSS3_logo.svg" alt="CSS"/>,
-        "React": <img className="skill_logo" src="/logos/React_logo.svg" alt="React"/>,
-        "Sass": <img className="skill_logo" style={{"width": "80px"}} src="/logos/Sass_logo.svg" alt="Sass"/>,
-        "Django": <img className="skill_logo" style={{"width": "100px"}} src="/logos/Django_logo.svg" alt="Django"/>,
+        "HTML": <img className="skill_logo" src={baseURL + "logos/HTML5_logo.svg"} alt="HTML"/>,
+        "CSS": <img className="skill_logo" src={baseURL + "logos/CSS3_logo.svg"} alt="CSS"/>,
+        "React": <img className="skill_logo" src={baseURL + "logos/React_logo.svg"} alt="React"/>,
+        "Sass": <img className="skill_logo" style={{"width": "80px"}} src={baseURL + "logos/Sass_logo.svg"} alt="Sass"/>,
+        "Django": <img className="skill_logo" style={{"width": "100px"}} src={baseURL + "logos/Django_logo.svg"} alt="Django"/>,
 
-        "Gimp": <img className="skill_logo" src="/logos/Gimp_logo.svg" alt="Gimp" style={{objectFit: "contain"}}/>,
-        "Inkscape": <img className="skill_logo" src="/logos/Inkscape_logo.svg" alt="Inkscape"/>,
+        "Gimp": <img className="skill_logo" src={baseURL + "logos/Gimp_logo.svg"} alt="Gimp" style={{objectFit: "contain"}}/>,
+        "Inkscape": <img className="skill_logo" src={baseURL + "logos/Inkscape_logo.svg"} alt="Inkscape"/>,
 
-        "GraphQL": <img className="skill_logo" src="/logos/GraphQL_logo.svg" alt="GraphQL"/>,
-        "Graphene-django":<img className="skill_logo" src="/logos/Graphene-django_logo.svg" alt="Graphene-django"/>,
-        "Apollo":<img className="skill_logo" src="/logos/Apollo_logo.svg" alt="Apollo"/>,
+        "GraphQL": <img className="skill_logo" src={baseURL + "logos/GraphQL_logo.svg"} alt="GraphQL"/>,
+        "Graphene-django":<img className="skill_logo" src={baseURL + "logos/Graphene-django_logo.svg"} alt="Graphene-django"/>,
+        "Apollo":<img className="skill_logo" src={baseURL + "logos/Apollo_logo.svg"} alt="Apollo"/>,
 
-        "Apache": <img className="skill_logo" src="/logos/Apache_logo.png" alt="Apache"/>,
+        "Apache": <img className="skill_logo" src={baseURL + "logos/Apache_logo.png"} alt="Apache"/>,
 
-        "PostgreSQL": <img className="skill_logo" src="/logos/PostgreSQL_logo.svg" alt="PostgreSQL"/>
+        "PostgreSQL": <img className="skill_logo" src={baseURL + "logos/PostgreSQL_logo.svg"} alt="PostgreSQL"/>
 
     }
 
@@ -91,25 +98,25 @@ export class StringToLogo extends React.Component{
 const languages = {
     0: {
         heading: "English",
-        image: {src: "/pdf/TOEIC_965_certificate_redacted.pdf#toolbar=0",
+        image: {src: "pdf/TOEIC_965_certificate_redacted.pdf#toolbar=0",
                 alt: "TOEIC 965"},
         text: "I have lived in a city bilingual in English and Chinese for over 20 years. The vast majority of my education is completed using English."
     },
     1: {
         heading: "Japanese",
-        image: {src: "/pdf/JLPT_N1_redacted.pdf#toolbar=0",
+        image: {src: "pdf/JLPT_N1_redacted.pdf#toolbar=0",
                 alt: "Japanese Language Proficiency Test N1"},
         text: "I am working in Japan and has passed the highest level of the most recognised Japanese language exam."
     },
     2: {
         heading: "German",
-        image: {src: "/pdf/Goethe_Institut_B1_reading_certificate_redacted.pdf#toolbar=0",
+        image: {src: "pdf/Goethe_Institut_B1_reading_certificate_redacted.pdf#toolbar=0",
                 alt: "Goethe Institut B1 Reading passed"},
         text: "I can understand daily life German and can read German news and publications."
     },
     3: {
         heading: "Chinese",
-        image: {src: "/pdf/HSK_level_6_certificate_redacted.pdf#toolbar=0",
+        image: {src: "pdf/HSK_level_6_certificate_redacted.pdf#toolbar=0",
                 alt: "Chinese Proficiency Test Level 6"},
         text: "I am a native speaker of Chinese and two more dialects."
     }
