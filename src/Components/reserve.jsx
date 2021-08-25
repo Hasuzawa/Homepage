@@ -5,7 +5,6 @@
 import React from "react";
 
 //Gallery component
-
 class Gallery extends React.Component{
     constructor(props){
         super(props);
@@ -195,6 +194,7 @@ var buttons = {
     }
 }
 
+//json static data
 import { language_English_photos, language_Japanese_photos, language_German_photos, language_Chinese_photos } from "./photos.js";
 
 export const language_English_photos = Object.freeze({

@@ -3,8 +3,6 @@
 $header-border: 3px;
 $banner-height: 95px;
 
-
-
 /*****************************/
 
 .App{
@@ -127,9 +125,6 @@ $banner-height: 95px;
         background-color: transparent;
 
         font-size: 30px;
-        //padding: 0 12px;
-
-        //testing
 
         &:hover{
             background: red;
@@ -252,9 +247,6 @@ $banner-height: 95px;
 }
 
 
-
-
-
 .introduction{
     width: 100%;
 
@@ -368,8 +360,6 @@ $banner-height: 95px;
 }
 
 
-
-
 .skills{
     @extend %flex-column-center;
 
@@ -394,7 +384,7 @@ $banner-height: 95px;
 
     .skill{
         margin: 20px;
-        //border: 1px solid black;
+        
         max-width: 1500px;
         padding: 6px;
 

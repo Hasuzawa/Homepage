@@ -39,7 +39,6 @@ export default class Header extends React.Component{
     render(){
         return (
         <nav className="header">
-            {/* should not have word here, only tabs should have word at the header bar*/}
             <span>Hasuzawa@Home</span>
             <div className="filler" />
             <div className="tab_menu">

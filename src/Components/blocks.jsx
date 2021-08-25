@@ -10,7 +10,6 @@ export function Job(props){
     return (
         <div className="job">
 
-
                 <div className="job--boxed--first_line">
                     <h2 className="job--job_title">{props.jobTitle}</h2>
                     <span className="job--date">{props.startDate} - {props.endDate}</span>
@@ -29,7 +28,6 @@ export function Job(props){
                         <span className="photo--caption">The building where I work at is right beside Osaka Castle.</span>
                     </div>
                     
-                    {/* image gallery */}
                 </div>
 
         </div>

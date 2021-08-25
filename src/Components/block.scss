@@ -99,20 +99,11 @@
 
 }
 
-/* display: grid could be a better choice
-
-
 /*******************/
 
 .gallery{
     flex-direction: column;
     border: 2px solid black;
-    
-
-    div:nth-child(1){
-
-    }
-
 
     .gallery--image{
         object-fit: scale-down;
@@ -120,8 +111,6 @@
         transition: 0.5s ease-in-out;
 
         &:hover{
-            /* might want to scale up and display at the left\right to not block the buttons */
-            /*transform: scale(2.0);*/
             transform-origin: center bottom;
             
         }
@@ -134,10 +123,7 @@
 
         &> button{
             color: black;
-
             background-color: grey;
-
-    
     
             &:hover{
                 color: red;
@@ -187,8 +173,6 @@
             text-align: center;
         }
 
-
-
     }
 }
 
@@ -234,8 +218,6 @@
         }
     }
 }
-
-
 
 /***********************/
 
