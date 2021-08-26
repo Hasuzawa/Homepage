@@ -32,7 +32,7 @@ export default class App extends React.Component {
   render(){
     return (
       <div className = "App">
-        <Banner bannerFolded={this.state.bannerFolded}/>
+        {/* <Banner bannerFolded={this.state.bannerFolded}/> */}
         <Header handleClick={this.handleClick} handleFold={this.handleFold} {...this.state}/>
         <Content selectedTab={this.state.selectedTab}/>
         <Footer handleClick={this.handleClick}/>

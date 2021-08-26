@@ -24,7 +24,7 @@ export function Job(props){
                 <div className="job--boxed--fourth_line" id="job--last_section">
                     <div className="job--description" id="job--description">{props.description}</div>
                     <div className="job--photo_area" id="job--photo_area">
-                        <img className="job--photo" id="job--photo" src="./images/near_Osaka_Castle.png" alt="near Osaka Castle"></img>
+                        <img className="job--photo" id="job--photo" src="images/near_Osaka_Castle.png" alt="near Osaka Castle"></img>
                         <span className="photo--caption">The building where I work at is right beside Osaka Castle.</span>
                     </div>
                     

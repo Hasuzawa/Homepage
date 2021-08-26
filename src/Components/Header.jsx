@@ -51,13 +51,13 @@ export default class Header extends React.Component{
                 buttons={this.renderButtons()}
             />
             <ToTheTopButton />
-            <button
+            {/* <button
                 className="fold_button"
                 onClick={this.props.handleFold}
                 testId="fold_button"
             >
                 {this.props.bannerFolded ? "▼" : "▲"}
-            </button>
+            </button> */}
         </nav>
         );
     }
